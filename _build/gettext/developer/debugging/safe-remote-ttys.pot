@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:3
+#: 1db4d2b7e0a8470783e0f577d1a2ce74
+msgid "Safe remote dom0 terminals"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:6
+#: 01a528528a0d4f3cb7251f90fc0387f1
+msgid "If you do not have working graphics in Dom0, then using a terminal can be quite annoying! This was the case for the author while trying to debug PCI-passthrough of a machine’s primary (only) GPU."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:10
+#: 2cd0ae7875ce4fa4aa119d641c60b7f4
+msgid "Your first thought might be to just allow network access to Dom0, enable ssh, and connect in remotely. But, this gravely violates the Qubes security model."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:14
+#: fd3917cdded048c38dc5bdff6265d60f
+msgid "Instead, a better solution is to split the input and output paths of using a terminal. Use your normal keyboard for input, but have the output go to a remote machine in a unidirectional manner."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:18
+#: 161f95157e5442da92b488ce4c16e190
+msgid "To do this, we make use of script(1), qvm-run, and optionally your network transport of choice."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:22
+#: dbfdbaa24e824df3b9e8665c007a7966
+msgid "To a different VM"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:25
+#: 7b354359d3c447a297382e3fe736b15e
+msgid "As an example of forwarding terminal output to another VM on the same machine:"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:37
+#: c1deecbb38174649830369d1f53251d1
+msgid "To a different machine"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:40
+#: 4e3067caae2c49099d2b90be16fb8f6e
+msgid "In this case over SSH (from a network-connected VM):"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:52
+#: 72c208b50cde4d24be33101fc80b4999
+msgid "Note that no data received over SSH is ever treated as terminal input in Dom0. The input path remains only from your trusted local keyboard."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:56
+#: e6680573202f451887c9eb955a9db83c
+msgid "Multiple terminals"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:59
+#: aa4ba5eab53747a89db663f47c714cb9
+msgid "For multiple terminals, you may find it easier to just use tmux than to try to blindly switch to the correct window."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:63
+#: 6156f40951af4e96bb18bb0c7d947deb
+msgid "Terminal size"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:66
+#: 64fcec44de864f1785e4e61fe22ce0e1
+msgid "It is up to you to ensure the sizes of the local and remote terminal are the same, otherwise things may display incorrectly (especially in interactive programs). Depending on your shell, the size of your local (blind) terminal is likely stored in the ``$LINES`` and ``$COLUMNS`` variables."
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:80
+#: 1ee3e10236bc4800a88674f1fbaa7b1c
+msgid "A note on serial consoles"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:83
+#: 0f2379a29cc1473b806e14cccbad465c
+msgid "If your machine has a serial console, you may with to use that, but note that a similar split-I/O model should be used to ensure Dom0 integrity. If you use the serial console as normal (via e.g. getty on ttyX, and logging in as normal), then the machine at the end of the serial cable could compromise your machine! Ideally, you would take input from your trusted keyboard, and only send the output over the serial cable via e.g. disabling getty and using:"
+msgstr ""
+
+#: ../../../developer/debugging/safe-remote-ttys.rst:97
+#: 69bd97f22ffc4869b09f9494445087bb
+msgid "You don’t even need to connect the TX pin."
+msgstr ""

@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:3
+#: 2798785f9d4445458036483499862926
+msgid "HVM troubleshooting"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:7
+#: 39b77eefa95f4bf6810e2ef2f6e928f6
+msgid "HVM pauses on boot, followed by kernel error"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:10
+#: ac8bf9a607b646a9bf155a06cdc93932
+msgid "The HVM may pause on boot, showing a fixed cursor. After a while a series of warnings may be shown similar to this:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:19
+#: d99cde9e5d2448f7831a28e0a19a9189
+msgid "To fix this:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:21
+#: e0a76ba6104d40479474801702ec742c
+msgid "Kill the HVM."
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:23
+#: ee9dc23367ed43878854f19e16fc3eec
+msgid "Start the HVM"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:25
+#: eb63441bd51a49a7aa69e3b87953d97c
+msgid "Press “e” at the grub screen to edit the boot parameters"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:27
+#: a880e6dd6454494d8c6a03367ec08d3a
+msgid "Find the /vmlinuz line, and edit it to replace “rhgb” with “modprobe.blacklist=bochs_drm”"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:30
+#: 93c4890ec9384959acd8b697d22efa8b
+msgid "Press “Ctrl-x” to start the HVM"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:34
+#: 466e0c6df6bc4d03a223db46199845f1
+msgid "If this solves the problem then you will want to make the change permanent:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:37
+#: d98d63f3dea4483f9bf948be0572156b
+msgid "Edit the file ``/etc/default/grub``."
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:39
+#: 7f45508edd6c43a8896ef8733fd3a108
+msgid "Find the line which starts:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:47
+#: ace883d26f52466eb3200da8a849aca3
+msgid "Remove this text from that line:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:55
+#: 39bf9fbee69e41f39d858f628715e7d6
+msgid "Add this text to that line:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:63
+#: 752960ba58da4f23ab0325da66753407
+msgid "Run this command:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:73
+#: 0644fd32f77147dea9bce31d7aa770e0
+msgid "The HVM should now start normally."
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:76
+#: 97152affdd034c4fae1c07eb25d60fc5
+msgid "Can't start an OS in an HVM / \"Probing EDD (edd=off to disable!… ok\" message"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:79
+#: 8a0a1b15d7084a11b3c0278d2a948994
+msgid "If you see a screen popup with SeaBios and 4 lines, last one being ``Probing EDD (edd=off to disable!... ok``, then enter the following command from a ``dom0`` prompt:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:89
+#: a9f856d9fb2c4ac0861751a50475ac2f
+msgid "HVM crashes when booting from ISO"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:92
+#: 7b83cbedaf454fb5b811547d95db9951
+msgid "If your HVM crashes when trying to boot an ISO, first ensure that ``qvm-prefs <HVMname> kernel`` is empty, as shown above. If this doesn’t help, then disable memory balancing and set the minimum memory to 2GB."
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:96
+#: 8405e042778341c79864047ed579e0be
+msgid "You can disable memory-balancing in the settings, under the “Advanced” tab."
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:99
+#: e9dde6348aef4c2499877e77bd75fca9
+msgid "To give the VM a RAM of 2GB, open a terminal in ``dom0`` and enter:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:107
+#: c734d06659ee478289866631133b9c99
+msgid "Attached devices in Windows HVM stop working on suspend/resume"
+msgstr ""
+
+#: ../../../user/troubleshooting/hvm-troubleshooting.rst:110
+#: e036a17eef474fb48bb258346995db9e
+msgid "After the whole system gets suspended into S3 sleep and subsequently resumed, some attached devices may stop working. To know how to make the devices work, see :ref:`Suspend/resume Troubleshooting <user/troubleshooting/resume-suspend-troubleshooting:attached devices in windows hvm stop working on suspend\\/resume>`."
+msgstr ""

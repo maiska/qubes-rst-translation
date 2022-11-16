@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/system/networking.rst:3
+#: db0416dbe4364ae48496afbc520a3898
+msgid "Networking"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:7
+#: 354527355b364a719eb38097a081ca51
+msgid "Overall description"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:10
+#: 8a1fd8e3e0c44aa9a163a67f31dfbb59
+msgid "In Qubes, the standard Xen networking is used, based on backend driver in the driver domain and frontend drivers in VMs. In order to eliminate layer 2 attacks originating from a compromised VM, routed networking is used instead of the default bridging of ``vif`` devices and NAT is applied at each network hop. The default *vif-route* script had some deficiencies (requires ``eth0`` device to be up, and sets some redundant iptables rules), therefore the custom *vif-route-qubes* script is used."
+msgstr ""
+
+#: ../../../developer/system/networking.rst:18
+#: a3f7b49f3d1848e8a2e8d1659caaa6dc
+msgid "The IP address of ``eth0`` interface in AppVM, as well as two IP addresses to be used as nameservers (``DNS1`` and ``DNS2``), are passed via QubesDB to AppVM during its boot (thus, there is no need for DHCP daemon in the network driver domain). ``DNS1`` and ``DNS2`` are private addresses; whenever an interface is brought up in the network driver domain, the */usr/lib/qubes/qubes_setup_dnat_to_ns* script sets up the DNAT iptables rules translating ``DNS1`` and ``DNS2`` to the newly learned real dns servers. This way AppVM networking configuration does not need to be changed when configuration in the network driver domain changes (e.g. user switches to a different WLAN). Moreover, in the network driver domain, there is no DNS server either, and consequently there are no ports open to the VMs."
+msgstr ""
+
+#: ../../../developer/system/networking.rst:32
+#: 4d17e1dc517c419388e21ab4d4b5b492
+msgid "Routing tables examples"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:35
+#: f0111db8e8a54abc827cadbf97febeef
+msgid "VM routing table is simple:"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:42
+#: ../../../developer/system/networking.rst:67
+#: 0b0e96bf42874bdcb061d4f844629565
+#: 2855b9469a624d19af2e94f9a6aa2cf5
+msgid "Destination"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:43
+#: ../../../developer/system/networking.rst:68
+#: 2e064d4066324059a9b78208211cd2e0
+#: bc4d25a351264575885a452706e60fed
+msgid "Gateway"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:44
+#: ../../../developer/system/networking.rst:69
+#: f7e1ee2912f44a02a2c3968359e1c828
+#: a1aa0e350e944a97a4f657118633685a
+msgid "Genmask"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:45
+#: ../../../developer/system/networking.rst:70
+#: 6b208c0647e1450ba0d7bb1d011726fb
+#: 57855cf1496046a0a34a27f9b1cb1ca1
+msgid "Flags"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:46
+#: ../../../developer/system/networking.rst:71
+#: c91a508a399142ee8274f88c77c3451f
+#: 264916523afe497aa4119d4496fd0bc6
+msgid "Metric"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:47
+#: ../../../developer/system/networking.rst:72
+#: 6c66992b26af4c378875dcf146cd97f1
+#: d52f14438e8945a89d290ea94626a6c5
+msgid "Ref"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:48
+#: ../../../developer/system/networking.rst:73
+#: 4a7990a590ea439ab9f0255fa18d3302
+#: f11ae123346e4cf2bc8fb04d64847b47
+msgid "Use"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:49
+#: ../../../developer/system/networking.rst:74
+#: 268055622a57433888013250a3d30c92
+#: 8dc868256e1749dca827f40243cbb98f
+msgid "Iface"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:50
+#: ../../../developer/system/networking.rst:51
+#: ../../../developer/system/networking.rst:52
+#: ../../../developer/system/networking.rst:76
+#: ../../../developer/system/networking.rst:84
+#: ../../../developer/system/networking.rst:92
+#: ../../../developer/system/networking.rst:100
+#: ../../../developer/system/networking.rst:108
+#: ../../../developer/system/networking.rst:116
+#: ../../../developer/system/networking.rst:123
+#: ../../../developer/system/networking.rst:125
+#: 17b5757c042f47c490a21ae412ebe201
+#: 7aa9c8d595194929904c4412c078b6e2
+#: f9b019be4771471caa579c917294aec8
+#: c6b862c925174e90a0c860e6b31c637b
+#: 54b96a82141d4592b23acd615513f225
+#: d020a8de77d8432e83d6c78267dc3fcf
+#: 4408cc1216474f3d8caaaf906aa72f0d
+#: fa7eb5051fe540ccb98c1318aff164f9
+#: e9cf592e3427481d8a47de3d52fe73dc
+#: be785c7a26f24c0bb503d1e5a90ed24c
+#: 5ff2281a72314b88835a8d5063a1ea1b
+msgid "0.0.0.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:53
+#: ../../../developer/system/networking.rst:118
+#: 9ce8c59649f741bf938996fe00bf782a
+#: 9200f1e77c36471ca8e190ade4064485
+msgid "U"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:54
+#: ../../../developer/system/networking.rst:55
+#: ../../../developer/system/networking.rst:56
+#: ../../../developer/system/networking.rst:79
+#: ../../../developer/system/networking.rst:80
+#: ../../../developer/system/networking.rst:81
+#: ../../../developer/system/networking.rst:87
+#: ../../../developer/system/networking.rst:88
+#: ../../../developer/system/networking.rst:89
+#: ../../../developer/system/networking.rst:95
+#: ../../../developer/system/networking.rst:96
+#: ../../../developer/system/networking.rst:97
+#: ../../../developer/system/networking.rst:103
+#: ../../../developer/system/networking.rst:104
+#: ../../../developer/system/networking.rst:105
+#: ../../../developer/system/networking.rst:111
+#: ../../../developer/system/networking.rst:112
+#: ../../../developer/system/networking.rst:113
+#: ../../../developer/system/networking.rst:120
+#: ../../../developer/system/networking.rst:121
+#: ../../../developer/system/networking.rst:127
+#: ../../../developer/system/networking.rst:128
+#: ../../../developer/system/networking.rst:129
+#: 841b608f776441ddb95e6b5ecf80866a
+#: a6382c7925934e939a12fefa0de842a5
+#: abe307e86cdc4b8fbda56137731cad2d
+#: eaf6985069744fbda55bd95392a65a7b
+#: 640eca10ea174c43a1cc5bfcf3d51606
+#: d563d1fa615a4e1b81af36658c6dc812
+#: 95dcacb1159b4a6b8c429517152ab84b
+#: 753c0340aa7e44538763a02ee1ea173c
+#: 6e0156c0126a4b9597f8a7b4d4ecef5d
+#: 2a4a80a0d5254bdc9723a16c3186b60e
+#: 452adc01da904deaa4e688c38b023821
+#: 3958ae98ad3e4b6c9e25ef131869502b
+#: 19c22fde334746d7b62565eed56457cd
+#: cdb46599d62242e8bb99113f8409ede8
+#: c2cffcf9e12942d1b309c4907db049b6
+#: d2229da7467a4b19b4882b2a305ca062
+#: e5c97d5ad36448558119fa99d1bd9d3a
+#: 921c0dadc9b44b29b70899b3d7868c4a
+#: 05f5459522ff481391e85156078cc4ad
+#: 1ba31ae873904a80977cc5ee0e6c8d57
+#: ef1fb10c0c2a4c6e91975ed7284f2eaf
+#: 007d0c228580457ea85b496988cbd0e3
+#: 68236e635ab74eb2acd14036b338c134
+msgid "0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:57
+#: ../../../developer/system/networking.rst:122
+#: ../../../developer/system/networking.rst:130
+#: 7f02ad46df404904abfcc32068ab8db2
+#: 0ea9fe038bef4a009c151ed7d630d054
+#: 2b86cb657b114b66abb06f493678a644
+msgid "eth0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:60
+#: 44f2d50e56c64af69cf11d40a4bcbe0d
+msgid "Network driver domain routing table is a bit longer:"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:75
+#: e6f6a10d1eb94afd8574a0944f617f57
+msgid "10.137.0.16"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:77
+#: ../../../developer/system/networking.rst:85
+#: ../../../developer/system/networking.rst:93
+#: ../../../developer/system/networking.rst:101
+#: ../../../developer/system/networking.rst:109
+#: 5e328b55d3344a2c806db07922a0ed68
+#: f14f580d40314efe846a5109707b4b2d
+#: 7f88e065c16e46d8b0aae2a160de9f76
+#: d3cd60376e354e9f942ebbee64fed60c
+#: 7e671fb02a864b399700b7bd8195e774
+msgid "255.255.255.255"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:78
+#: ../../../developer/system/networking.rst:86
+#: ../../../developer/system/networking.rst:94
+#: ../../../developer/system/networking.rst:102
+#: ../../../developer/system/networking.rst:110
+#: 31e3c6193cc64065948bc6315804c490
+#: da48205757774107a35382a0f027e34a
+#: dbdeef12d93b4f31a22b76629a694a8d
+#: 16d56f56f4324e28b94bb65af5e07ff9
+#: 3be206cf95634b0eb4f745c855a799da
+msgid "UH"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:82
+#: 207922105600416f979a97bbe0f10902
+msgid "vif4.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:83
+#: 34682fe1c83d4f2a8d31a464d7133015
+msgid "10.137.0.7"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:90
+#: 99055c606e6f433d9f8ea6e12c84c9a9
+msgid "vif10.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:91
+#: dbdca447c2b048838faa6cada1050434
+msgid "10.137.0.9"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:98
+#: 2e76ac1719b1471582bec4a70b507c8d
+msgid "vif9.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:99
+#: f739f9de1fdf48ba82ab230b286f747c
+msgid "10.137.0.8"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:106
+#: df1fd797657a423e9ec4c280b5a054e0
+msgid "vif8.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:107
+#: 2f8db1a5bf6d4898888293e7a1dda638
+msgid "10.137.0.12"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:114
+#: 8084542e9b234ee08536b2dd438db95c
+msgid "vif3.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:115
+#: 5d26116df5824d1cb2e66a0d20d49139
+msgid "192.168.0.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:117
+#: fff245a28bc146cd9102b6973f366395
+msgid "255.255.255.0"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:119
+#: ec24bb801b8842bd869a73e0c581549e
+msgid "1"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:124
+#: c2c5348784a5432083f433d02a13a056
+msgid "192.168.0.1"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:126
+#: 121a0283e9dd488c87eb8f5cf4869f94
+msgid "UG"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:134
+#: 6e451be806674c9cad72a3fa5db83096
+msgid "IPv6"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:137
+#: 508d6f603f124d1e88c487e524f3d60a
+msgid "Starting with Qubes 4.0, there is opt-in support for IPv6 forwarding. Similar to the IPv4, traffic is routed and NAT is applied at each network gateway. This way we avoid reconfiguring every connected qube whenever uplink connection is changed, and even telling the qube what that uplink is - which may be complex when VPN or other tunneling services are employed. The feature can be enabled on any network-providing qube, and will be propagated down the network tree, so every qube connected to it will also have IPv6 enabled. To enable the ``ipv6`` feature use ``qvm-features`` tool and set the value to ``1``. For example to enable it on ``sys-net``, execute in dom0:"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:154
+#: bc0a0efb938d47b183ea5e4e6c8dd543
+msgid "It is also possible to explicitly disable IPv6 support for some qubes, even if it is connected to IPv6-providing one. This can be done by setting ``ipv6`` feature to empty value:"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:164
+#: 9c0b18ccc6dc4a5fbff9290954d208a8
+msgid "This configuration is presented below - green qubes have IPv6 access, red one does not."
+msgstr ""
+
+#: ../../../developer/system/networking.rst:170
+#: ../../../developer/system/networking.rst:170
+#: deaddf221b8945dea06bb1cf7ff3d684
+#: d494c95ed3e3466cbd945966ecd992cb
+msgid "ipv6-1"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:172
+#: c087e69894684d309058cf80d851b5e4
+msgid "In that case, system uplink connection have native IPv6. But in some cases it may not be true. Then some tunneling solution can be used (for example teredo). The same will apply when the user is connected to VPN service providing IPv6 support, regardless of user’s internet connection. Such configuration can be expressed by enabling ``ipv6`` feature only on some subset of Qubes networking, for example by creating separate qube to encapsulate IPv6 traffic and setting ``ipv6`` to ``1`` only there. See diagram below"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:184
+#: ../../../developer/system/networking.rst:184
+#: b9ed29789fba4251bac295798bcc34b7
+#: 723af80cb7d043c69e81b98a76ae4665
+msgid "ipv6-2"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:186
+#: b209212a5c11419bb123df92c1808d84
+msgid "Besides enabling IPv6 forwarding, standard Qubes firewall can be used to limit what network resources are available to each qube. Currently only ``qvm-firewall`` command support adding IPv6 rules, GUI firewall editor will have this ability later."
+msgstr ""
+
+#: ../../../developer/system/networking.rst:192
+#: 9aafe4d6e77548a2be8906dae8dfd1f5
+msgid "Limitations"
+msgstr ""
+
+#: ../../../developer/system/networking.rst:195
+#: bf956c0f639a4483b26de94379475d4e
+msgid "Currently only IPv4 DNS servers are configured, regardless of ``ipv6`` feature state. It is done this way to avoid reconfiguring all connected qubes whenever IPv6 DNS becomes available or not. Configuring qubes to always use IPv6 DNS and only fallback to IPv4 may result in relatively long timeouts and poor usability. But note that DNS using IPv4 does not prevent to return IPv6 addresses. In practice this is only a problem for IPv6-only networks."
+msgstr ""

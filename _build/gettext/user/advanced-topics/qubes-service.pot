@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/advanced-topics/qubes-service.rst:3
+#: 6aa26b6953b841d3ba457403a4d2faf7
+msgid "Qubes service"
+msgstr ""
+
+#: ../../../user/advanced-topics/qubes-service.rst:6
+#: 594689bcd8994c27b39456fa8ed352e4
+msgid "Usage documentation is in the ``qvm-service`` man page. There are also described predefined services."
+msgstr ""
+
+#: ../../../user/advanced-topics/qubes-service.rst:9
+#: a640806b4d1f4476b8977a345907b083
+msgid "Under the hood, an enabled service in a VM is signaled by a file in ``/var/run/qubes-service``. This can be used to implement an almost enable/disable **per-VM** switch controlled by dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/qubes-service.rst:13
+#: 423a751c9bc7495ab55675ccf10df155
+msgid "Adding support for systemd services is pretty simple. In the VM, create the following file (and directory, if needed): ``/etc/systemd/system/<service name>.service.d/30_qubes.conf``. It should contain the following:"
+msgstr ""
+
+#: ../../../user/advanced-topics/qubes-service.rst:25
+#: 8aafaaa7c9a7427a8b21af1fdb63b56e
+msgid "This will cause the service to be started only when you enable it with ``qvm-service`` for this VM."
+msgstr ""

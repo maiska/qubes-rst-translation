@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:3
+#: e0e91cf0c3634df6958bbb5d06186689
+msgid "Upgrading to R3.1"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:6
+#: aaeededbb1744ca0b3d3427d7931023a
+msgid "**Before attempting either an in-place upgrade or a clean installation, we strongly recommend that users** :doc:`back up their systems </user/how-to-guides/how-to-back-up-restore-and-migrate>` **.**"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:8
+#: fd71ad079e9e4f7d9792037f6edec646
+msgid "Current Qubes R3.0 systems can be upgraded in-place to the latest R3.1 by following the procedure below."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:12
+#: 8c9ba928f4e74101bef52d8a70c0e41d
+msgid "Upgrade all Template and Standalone VM(s)"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:15
+#: 1601f80ee2d04d41989e697e5140cbd3
+msgid "By default, in Qubes R3.0, there is only one template. However, users are free to create more templates for special purposes, as well as standalones. More information on using multiple templates, as well as standalones, can be found :doc:`here </user/how-to-guides/how-to-install-software>`. The steps described in this section should be repeated in **all** the user’s Template and Standalone VMs."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:23
+#: 9db2ac16463947fea29f2b37a8060483
+msgid "Upgrade Fedora templates:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:26
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:54
+#: 0cddbb7b53c3479082c3088d4803e583
+#: 86046e2c151d4c8aa1fc5c11395f39d2
+msgid "Open a terminal in the template (or standalone). (E.g., use Qubes VM Manager’s right-click menu, choose “Run Command in VM,” and type ``gnome-terminal`` there.)"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:30
+#: 4b3502dc847f41a4bbf5315af6f5b7db
+msgid "Install the ``qubes-upgrade-vm`` package:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:38
+#: 05be1ccc5cc949c6a07f4f695303d2b5
+msgid "Proceed with a normal upgrade in the template:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:46
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:84
+#: 2a226311119947aeb26f78af9fb69a95
+#: afe8fda6201345f9a00a699f324763f6
+msgid "Shut down the template."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:51
+#: 9973d4f365fd4ba7becc36da3d5e14b5
+msgid "Upgrade Debian (and Whonix) templates:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:58
+#: 629bafd14bf64681b67fcdb989ada215
+msgid "Update repository definition:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:67
+#: 8bc028ffa7f44b9db0b474a7ccbc884d
+msgid "Proceed with a normal update in the template:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:76
+#: 8b338ec5b8954909a792132b605c0981
+msgid "Remove unnecessary now file:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:89
+#: 97cb9a8adcae4b228ebf8beaefef41b2
+msgid "Upgrading dom0"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:92
+#: b07eefab1e344883bd716b7a1ad73909
+msgid "**Important:** Do not perform the steps described in this section until **all** your Template and Standalone VMs have been upgraded as described in the previous section. Also, do not shut down ``sys-net`` or ``sys-firewall``, since you will not be able to start them again until after the entire in-place upgrade procedure is complete."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:98
+#: ebb2736aec2a49448b010391fba764b0
+msgid "Open a terminal in Dom0. (E.g., Start -> System Settings -> Konsole.)"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:100
+#: 0dc7e30b334b4bedaec3708ae1cc6957
+msgid "Upgrade dom0 to R3.1:"
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:107
+#: f3f303b5b8fa4c8eb7fe91c43dd67dd2
+msgid "At this point, most of the ``qvm-*`` tools will stop working until after you reboot the system."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:110
+#: f621a1c9fbb742aba58eadfd4a5b3125
+msgid "If the previous step completed successfully, your ``qubes-core-dom0`` version should be ``3.1.4`` or higher. If it’s not, repeat the previous step with the ``--clean`` option."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:114
+#: ea883e8049e440aca8e22f64e0daa323
+msgid "Reboot dom0. The system may hang during the reboot. If that happens, do not panic. All the filesystems will have already been unmounted at this stage, so you can simply perform a hard reboot (e.g., hold the physical power button down until the machine shuts off, wait a moment, then press it again to start it back up)."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:123
+#: 04ea1c4079554a8ebd362af30ee974fc
+msgid "Please note that if you use :doc:`Anti Evil Maid </user/security-in-qubes/anti-evil-maid>`, it won’t be able to unseal the passphrase the first time the system boots after performing this in-place upgrade procedure since the Xen, kernel, and initramfs binaries will have changed. Once the system boots up again, you can reseal your Anti Evil Maid passphrase to the new configuration. Please consult the Anti Evil Maid :doc:`documentation </user/security-in-qubes/anti-evil-maid>` for instructions on how to do that."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:132
+#: f39776a55ba9402390140426f63605a9
+msgid "If you use USB VM, you may encounter problem with starting it on updated Xen version (because of strict default settings). Take a look at :ref:`User FAQ <introduction/faq:i created a usb vm and assigned usb controllers to it. now the usb vm won't boot.>` for details."
+msgstr ""
+
+#: ../../../user/downloading-installing-upgrading/upgrade/3_1.rst:136
+#: 3fa5d99f69d04978a1ad68b77b0df6b4
+msgid "Once you have upgraded dom0, you can install new templates from Qubes R3.1 repositories, in particular the new default Fedora 23 template:"
+msgstr ""

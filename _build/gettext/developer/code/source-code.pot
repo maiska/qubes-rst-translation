@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/code/source-code.rst:3
+#: 76852c0a411b4939be73bad2d731aedc
+msgid "Source code"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:6
+#: 22f4d5a8bb0d4cdaa101d572a5662e87
+msgid "All the Qubes code is kept in Git repositories. We have divided the project into several components, each of which has its own separate repository, for example:"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:10
+#: 316ae2976174448891efc00394880f5e
+msgid "``core-admin.git`` – The core Qubes infrastructure, responsible for VM management, VM templates, fs sharing, etc."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:13
+#: dabd945b40c742b69735a26ddfd6de67
+msgid "``gui-daemon.git`` – GUI virtualization, Dom0 side."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:15
+#: 0ef1085643c74b0aa9593ff56727ae08
+msgid "``gui-agent-linux.git`` – GUI virtualization, Linux VM side."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:17
+#: d940787237e4438fbc6d435610b1536e
+msgid "``linux-template-builder.git`` – Scripts and other files used to create Qubes template images."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:22
+#: 9c277b6480994bf98caa61b78647b91e
+msgid "All of our repositories are available under the `QubesOS GitHub account <https://github.com/QubesOS/>`__."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:24
+#: ecd2772ad3c44ae4af6e53be1d390e9f
+msgid "To clone a repository:"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:32
+#: 5d2d610b403540ad8c20cd85637992e1
+msgid "e.g.:"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:40
+#: 77f0ee6c58e44b9f8ffddf9576cd4ec0
+msgid "To build Qubes you do not need to download all these repositories. If you use :doc:`qubes builder </developer/building/qubes-builder>` you can specify *what* you want to build, and download only the repositories needed to build that target."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:45
+#: 2839acd110664106ac0b803b301621ce
+msgid "If you really do want to clone **all** of the repositories, you can use these commands:"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:55
+#: c6ad6effde3d4432b2b9f82da9f99c6a
+msgid "To update (git fetch) **all** of these repositories :"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:63
+#: f0f441e05200459787143228cd9c4e3f
+msgid "(Alternatively, you can pull instead of just fetching.)"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:66
+#: f1561423e88b4b80b55d235ee5ea020c
+msgid "How to Send Patches"
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:69
+#: 4e7c9b449fe34f6db396bb39e36ec31a
+msgid "If you want to :ref:`contribute code <introduction/contributing:contributing code>` to the project, there are two ways. Whichever method you choose, you must :doc:`sign your code </developer/code/code-signing>` before it can be accepted."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:72
+#: ca935cfe4246405d81dcd0fb252ea5c5
+msgid "**Preferred**: Use GitHub’s `fork & pull requests <https://guides.github.com/activities/forking/>`__. Opening a pull request on GitHub greatly eases the code review and tracking process. In addition, especially for bigger changes, it’s a good idea to send a message to the :ref:`qubes-devel mailing list <introduction/support:qubes-devel>` in order to notify people who do not receive GitHub notifications."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:78
+#: f5d65b8249784b32865248c93c4bcdb1
+msgid "Send a patch to the :ref:`qubes-devel mailing list <introduction/support:qubes-devel>` (``git format-patch``)."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:80
+#: 0715056e10ac4895a91994a79a82d205
+msgid "Make all the changes in your working directory, i.e. edit files, move them around (you can use ‘git mv’ for this), etc."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:83
+#: c628617a07f943df807f726f79aa3b6e
+msgid "Add the changes and commit them (``git add``, ``git commit``). Never mix different changes into one commit! Write a good description of the commit. The first line should contain a short summary, and then, if you feel like more explanations are needed, enter an empty new line, and then start the long, detailed description (optional)."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:90
+#: 768ad4ee941647ee98275f073d566205
+msgid "Test your changes NOW: check if RPMs build fine, etc."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:92
+#: 9de676cdc7894ea08cf48c449416b8cb
+msgid "Create the patch using ``git format-patch``. This has an advantage over ``git diff``, because the former will also include your commit message, your name and email, so that *your* name will be used as a commit’s author."
+msgstr ""
+
+#: ../../../developer/code/source-code.rst:97
+#: 1f80c8415ace474684d287c8475931dc
+msgid "Send your patch to ``qubes-devel``. Start the message subject with ``[PATCH]``."
+msgstr ""

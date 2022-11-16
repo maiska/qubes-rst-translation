@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:3
+#: 2bb6c5c209034b6abf4eef7a4a803ba9
+msgid "Anti evil maid (AEM)"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:7
+#: 33bf674297674107b89c2926edd86929
+msgid "Background"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:10
+#: e7b7442ed7d4467aa6c6c5999bb3ec55
+msgid "Please read `this blog article <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__."
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:13
+#: 8a63dc74291a4e85a054f0ab6aba48bc
+msgid "Requirements"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:16
+#: 592dec6676aa465b81f6a5f295e23b02
+msgid "The current package requires a TPM 1.2 interface and a working Intel TXT engine. If you cleaned your Intel Management Engine with e.g. `me_cleaner <https://github.com/corna/me_cleaner>`__ while installing `CoreBoot <https://www.coreboot.org/>`__ then you are out of luck. For now you have to choose between cleaning your BIOS and deploying Anti Evil Maid."
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:23
+#: ab03183eacf543ce9ecc9a090336084c
+msgid "`Discussion <https://groups.google.com/d/msg/qubes-users/sEmZfOZqYXM/j5rHeex1BAAJ>`__"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:26
+#: 19f8a6c265034e87a76fbf2ce3cb5236
+msgid "Installing"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:29
+#: a3e4a05fac6348a6a945c14be8a15a7f
+msgid "In Dom0 install ``anti-evil-maid``:"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:37
+#: a629c2a44abb44789f2815a81a1643c0
+msgid "For more information, see the `qubes-antievilmaid <https://github.com/QubesOS/qubes-antievilmaid>`__ repository, which includes a ``README``."
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:42
+#: b2e779e9502042179b83ef9deceb7512
+msgid "Security Considerations"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:45
+#: d4740446db8c4b3580ed4a70633a96e3
+msgid "`Qubes security guidelines <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md>`__ dictate that USB devices should never be attached directly to dom0, since this can result in the entire system being compromised. However, in its default configuration, installing and using AEM requires attaching a USB drive (i.e., `mass storage device <https://en.wikipedia.org/wiki/USB_mass_storage_device_class>`__) directly to dom0. (The other option is to install AEM to an internal disk. However, this carries significant security implications, as explained `here <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html>`__.) This presents us with a classic security trade-off: each Qubes user must make a choice between protecting dom0 from a potentially malicious USB drive, on the one hand, and protecting the system from Evil Maid attacks, on the other hand. Given the practical feasibility of attacks like `BadUSB <https://opensource.srlabs.de/projects/badusb>`__ and revelations regarding pervasive government hardware backdoors, this is no longer a straightforward decision. New, factory-sealed USB drives cannot simply be assumed to be “clean” (e.g., to have non-malicious microcontroller firmware). Therefore, it is up to each individual Qubes user to evaluate the relative risk of each attack vector against his or her security model."
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:66
+#: f6f5dcf752e944af972e894416bee414
+msgid "For example, a user who frequently travels with a Qubes laptop holding sensitive data may be at a much higher risk of Evil Maid attacks than a home user with a stationary Qubes desktop. If the frequent traveler judges her risk of an Evil Maid attack to be higher than the risk of a malicious USB device, she might reasonably opt to install and use AEM. On the other hand, the home user might deem the probability of an Evil Maid attack occurring in her own home to be so low that there is a higher probability that any USB drive she purchases is already compromised, in which case she might reasonably opt never to attach any USB devices directly to dom0. (In either case, users can–and should–secure dom0 against further USB-related attacks through the use of a `USB VM <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md#creating-and-using-a-usbvm>`__.)"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:79
+#: f7979c72d6c74afb9fa294bb90309696
+msgid "For more information, please see `this discussion thread <https://groups.google.com/d/msg/qubes-devel/EBc4to5IBdg/n1hfsHSfbqsJ>`__."
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:82
+#: bd6825e5bd654b1585157a01111db6f5
+msgid "Known issues"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:85
+#: 50d92fa6bf064ee4889de98e939cb441
+msgid "USB 3.0 isn’t supported yet"
+msgstr ""
+
+#: ../../../user/security-in-qubes/anti-evil-maid.rst:87
+#: 714d3442bb3242ecb69ab975bd20c309
+msgid "`AEM is not compatible with having an SSD cache <https://groups.google.com/d/msgid/qubes-users/70021590-fb3a-4f95-9ce5-4b340530ddbf%40petaramesh.org>`__"
+msgstr ""

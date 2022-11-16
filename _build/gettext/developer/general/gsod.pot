@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/general/gsod.rst:3
+#: ebe466e8164c4e8eb493f40fa8c986fe
+msgid "Google Season of Docs (GSoD)"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:6
+#: ddf8970d79e040aebf346f46feebf6c1
+msgid "Thank you for your interest in participating in the `2021 Google Season of Docs <https://developers.google.com/season-of-docs/>`__ program with the `Qubes OS team <https://www.qubes-os.org/team/>`__. You can read more about the Google Season of Docs in the official `guides <https://developers.google.com/season-of-docs/docs/>`__ and `FAQ <https://developers.google.com/season-of-docs/docs/faq>`__."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:13
+#: 7a23934f0b694ecbbf8d2d5b83e2760e
+msgid "2021 Project Idea"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:17
+#: eb7f0b5015e749baace5da372aff9077
+msgid "Qubes OS on Virtual Machines and Disposable VMs documentation - Qubes OS"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:21
+#: 90d906182a554b54b4465b3abcbb3176
+msgid "About your organization"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:24
+#: 4b956940ce8b42df9eeb89ad3576621c
+msgid "Qubes OS is a free and open source operating system uniquely designed to protect the security and privacy of the user. Its architecture is built to enable a user to define different security environments (“qubes”) on their computer and visually manage their interaction with each other and the world."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:30
+#: 85f2ec3aba8f4b39906f35d0b2d98720
+msgid "Qubes OS was launched in 2011 and has `received praise from security experts <https://www.qubes-os.org/endorsements/>`__ like Edward Snowden, Bill Buddington (EFF), Isis Lovecruft (Tor Project), and Kenn White (Open Crypto Audit), and has over `30,000 active users <https://www.qubes-os.org/statistics/>`__."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:34
+#: e73af5857e0649ec92bc075fe5c2357b
+msgid "From network-level to software-level protections, as well as protections against firmware and hardware attacks, Qubes OS is trying to protect the user from the most significant attacks they encounter so that they can get their work done, safely."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:40
+#: d9c65336152647fdb30f6dc0a4f3eeac
+msgid "The Project"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:43
+#: 5621a69d51f445438820efa2dae70c5a
+msgid "The goal of the project is to improve the documentation related to Disposable VMs and installing Qubes OS on Virtual Machines."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:46
+#: e2bc499b57b6468a820a391aa57e542c
+msgid "The current Disposable VMs documentation is scarce, inconsistent in places and is scattered across multiple pages, sometimes hard to find. This project involves consolidating it into one or few easy to find pages, covering all related subjects. It should be written in way easy to follow and understand, clearly separating basic use cases, advanced ones and internal details. The terminology should also be used consistently."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:54
+#: 4d171061092b4433a8d4d9a78e1d083d
+msgid "Additionally, Qubes OS is missing an installation guide for virtual machines. Users are installing an outdated and unsupported version of Qubes OS (3.2) instead of the supported version. There is unofficial existing installation guide for Qubes OS on a virtual box but it is misleading and lacks documentation. Usually, users face some errors and bugs while installing Qubes OS on a virtual machine. This project also involves writing an installation guide that details how to install Qubes on virtual machines, and how to troubleshoot any issues that may arise."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:64
+#: 4175b0e9034d440d91b2f1316679a7d9
+msgid "Project's scope"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:67
+#: 9f33a18016154d01a556c797bda7c8ce
+msgid "The technical writer will:"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:69
+#: 8cf1bdaf413c4db786f8bae76930f43c
+msgid "Review existing Disposable VM documentation"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:71
+#: 0de3e0a5ec35433a8ea83eff244d172a
+msgid "Propose new documentation layout, including split between pages"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:73
+#: c8e8ed195e9f457786cfa250eb22c7e3
+msgid "Propose updated and clarified content"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:75
+#: c2dd86a52c45422a98c40dbd3487d39d
+msgid "Provide a new option of installation guide for users working on virtual machines."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:78
+#: 980cebb780df4bb8adc57d3829fc24cb
+msgid "Review existing problems and provide solutions to them."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:80
+#: a29f1ab612e848908d18e6ee4e494823
+msgid "Giving a warning for using outdated versions of Qubes."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:84
+#: bff769144e5b4ad69508d02c026e4761
+msgid "Knowledge prerequisites:"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:86
+#: bb638bc5edc94c54bc916142d5d21976
+msgid "Basic Qubes OS knowledge - intro, getting started."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:88
+#: d210118b095b481db821f58c1c2f9cfa
+msgid "Markdown."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:90
+#: 754cdfe2aca34706879c158447cf9f23
+msgid "Experience in virtual boxes and machines."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:92
+#: a97665b862e94861a639b62351de6fa1
+msgid "Basic knowledge about Fedora Linux architecture."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:96
+#: 09a18a0100e6415896f05412e328e75e
+msgid "The project is estimated to need around 6 months, with a part-time (20hr/week) workload. Qubes OS team members focused on documentation (Michael Carbone, Andrew David Wong, Marek Marczykowski-Górecki) have committed to supporting the project."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:102
+#: a9d1812bae5a4efc8c72efd0e8ce5b77
+msgid "Measuring the project's success"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:105
+#: bc8c29080ca749f0bf54acb251951d38
+msgid "We will consider the project successful if, after publication of the new documentation:"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:108
+#: aa1545b6c0e94bad94b0c585b92431ec
+msgid "The Disposable VM documentation is consilidated into a few pages and easier to find."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:111
+#: a17a69de78d44e838a254686a1bbc424
+msgid "Disposable VM terminology is consistent across all pages"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:113
+#: f767d787ae7d4516967e9633b811b949
+msgid "There is a new installation guide detailing how to install Qubes on virtual machines (VirtualBox), complete with screenshots and troubleshooting steps where necessary."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:117
+#: a8190f052be54e00902f4db0db8d512b
+msgid "There is a decrease (by ~20%) in the number of issues and questions raised for topics covered in the documentation, whether in the official Github issues tracker, the Qubes mailing list, or the Qubes community forum."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:125
+#: 23f9db9091ec4847b5b29a1b092edcb5
+msgid "Budget"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:133
+#: d67e7aa3a62544fcbb1852e258ae9e3a
+msgid "Budget item"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:134
+#: a14a5aa229a34836ac3a6617b823478c
+msgid "Amount"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:135
+#: 165bb82783064e9b80ae92adfe991310
+msgid "Running total"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:136
+#: e17d0657624148528212675bdb4f757a
+msgid "Note / Justification"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:137
+#: 4e596d0a89f44d26bf622bbca2c5aeb0
+msgid "Technical writer audit, update, and write new documentation"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:138
+#: ../../../developer/general/gsod.rst:143
+#: d15eef025f9948a69e17c93eecc5bd3c
+#: 3c255f76c0614020aecab4a76f74eb32
+msgid "$12000"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:139
+#: 8b91a684211449c88b03429a52fe214f
+msgid "12000 | based on a 20 hr/week for 6 m onths at 25/hr"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:141
+#: a2ecc764067f4a42bc9903c4c26399c5
+msgid "TOTAL"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:149
+#: 473f1337b9fa4b8a9d5705b6f042868c
+msgid "Additional information"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:152
+#: bf49e7924f7e4828b33381a20b032cd7
+msgid "Qubes OS regularly participates in the Google Summer of Code and Google Season of Docs. This is our third time in a row participating in Google Season of Docs. Our mentorships for GSoD 2019 and 2020 were successes and both projects were completed within the times allotted. The past Google Season of Docs projects have given us experience in working with technical writers, and has helped us to understand the benefits of technical writers can to our project"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:161
+#: aadf8053adac4465bac1ca90c61a6914
+msgid "Past Projects"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:164
+#: 93abc35fe27b4e56809a122025d5e2c8
+msgid "You can view the project we had in 2019 in the `2019 GSoD archive <https://developers.google.com/season-of-docs/docs/2019/participants/project-qubes>`__ and the `2019 writer’s report <https://web.archive.org/web/20200928002746/https://refre.ch/report-qubesos/>`__."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:167
+#: 02cbcfa2e9de48c389a03c3ac2bc092b
+msgid "You can also view the project we had in 2020 in the `2020 GSoD archive <https://developers.google.com/season-of-docs/docs/2020/participants/project-qubesos-c1e0>`__ and the `2020 writer’s report <https://web.archive.org/web/20210723170547/https://gist.github.com/PROTechThor/bfe9b8b28295d88c438b6f6c754ae733>`__."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:170
+#: a60ed4e75efd4b05b879b6cd7d1c2a48
+msgid "Here are some successful projects which have been implemented in the past by Google Season of Docs participants."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:174
+#: f3b0cbb3be274d91abae8be96a7c9444
+msgid "Consolidate troubleshooting guides"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:177
+#: c3b4c86d307341c28b446771ec0f1b34
+msgid "**Project**: Consolidate troubleshooting guides"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:179
+#: 1049faf8f1944a5b92ab68d457c0c8b6
+msgid "**Brief explanation**: Troubleshooting guides are scattered across many pages and sometimes incomplete, leading to repeatedly posting the same instruction over and over when helping users to diagnose problems. This could be helped by writing a consolidated guide with a clear list of symptom-action layout."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:185
+#: ../../../developer/general/gsod.rst:219
+#: ../../../developer/general/gsod.rst:253
+#: 2ea60051a6344287b8345d306e8ec963
+#: 0cb6a00fe8e049d49fff2432380bbe06
+#: 93cfb7f698e24f73bc3e4adaa75d42e3
+msgid "**Expected results**:"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:187
+#: 4fb36ed702f7400c8979c558bcd2c5a0
+msgid "Review existing :ref:`troubleshooting guides <index:troubleshooting>`"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:189
+#: 692fd10c59074936872cf62a83d03477
+msgid "Review `issues <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22C%3A+doc%22>`__ containing common troubleshooting steps (checking specific logs etc)"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:193
+#: 7504e6c8adb2468384b5b9bd317d5f2c
+msgid "Propose updated, consolidated troubleshooting documentation, including its layout"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:198
+#: ../../../developer/general/gsod.rst:227
+#: ../../../developer/general/gsod.rst:266
+#: 7c38cbfb2f7e4f8481b24254f7b3cde1
+#: 5550244dd56843b9ae78ad37e2860c82
+#: c0c86633e6be4872b4311b38a2cfa52d
+msgid "**Knowledge prerequisite**:"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:200
+#: ../../../developer/general/gsod.rst:231
+#: ../../../developer/general/gsod.rst:268
+#: 01f815a4af864ae7b93c260573e00a4c
+#: e4b596e7b1a24f54952f87274522aa3c
+#: b64ae0f1bb034c3cb7874bbe3fd8f61c
+msgid "`Markdown <https://daringfireball.net/projects/markdown/>`__"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:204
+#: ../../../developer/general/gsod.rst:272
+#: 6a75b42def1647e1856e44905bf1f8f9
+#: c7f4c7119f6140a19934fdb847c0ce1b
+msgid "**Mentor**: `Marek Marczykowski-Górecki <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:207
+#: 28f7311927bc412892f4bcbbf5451693
+msgid "Improve Getting Started page"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:210
+#: 6403651948f445efa0280c5da620fd18
+msgid "**Project**: Improve Getting Started page"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:212
+#: 17e29d877b6545c1ada221372733f3e7
+msgid "**Brief explanation**: The `Getting Started page <https://www.qubes-os.org/doc/getting-started/>`__ is the place a new user would go to understand better how to use Qubes. It is currently has old screenshots not using the default desktop environment and could have much better flow. In addition, this improved page content may end up being served more directly to the user via the `offline documentation <https://github.com/QubesOS/qubes-issues/issues/1019>`__ or the firstboot guide."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:221
+#: e1a683ee8f1e408ea14ad9cc3fa70498
+msgid "Review the existing page and website, similar pages for other OSes"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:223
+#: 96dc365612124a42b05f509a91b101ba
+msgid "Provide visual mock-ups and proposed text"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:229
+#: 052b2f844ffd4824a9974e8298926296
+msgid "basic Qubes OS knowledge"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:235
+#: 9e439ff106a246e58e0a83dac6fef8fa
+msgid "**Mentor**: `Michael Carbone <https://www.qubes-os.org/team/>`__"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:238
+#: 52effbb195fe4cb396a4e3fee3551bd6
+msgid "Rewrite qrexec documentation"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:241
+#: ba0268b65ce54c19ab2a9a6395d40102
+msgid "**Project**: Rewrite qrexec documentation"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:243
+#: b042b11246974cc1be719f7119375ba3
+msgid "**Brief explanation**: Current qrexec (qubes remote exec) documentation is hard to follow, important informations are hidden within a wall of text. Some parts are split into multiple sections, for example version specific to avoid duplication, but it doesn’t help reading it. Additionally, protocol documentation describes only few specific use cases, instead of being clear and precise protocol specification. Fixing this last point may require very close cooperation with developers, as the current documentation doesn’t multiple corner cases (that’s one of the issue with its current shape)."
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:255
+#: c6b31dc9ca3d463cb5bbba12510b29a2
+msgid "Review existing `qrexec documentation <https://www.qubes-os.org/doc/qrexec3/>`__ and an `issue about it <https://github.com/QubesOS/qubes-issues/issues/1392>`__"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:258
+#: 9171ef0f49974de4af6d7e25b7685d1f
+msgid "Propose updated, consolidated admin documentation (policy writing, adding services)"
+msgstr ""
+
+#: ../../../developer/general/gsod.rst:261
+#: fec660e9bea3435fb6b42769155a1354
+msgid "Propose consolidated protocol specification, based on the current documentation, and cooperation with developers"
+msgstr ""

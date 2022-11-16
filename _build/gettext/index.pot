@@ -1,0 +1,1198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:14
+#: ../../../index.rst:11
+#: 
+#: ca8b901720eb441e9eca02da16d96b04
+msgid "Introduction"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Screenshots"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Video tours"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Getting started"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Frequently asked questions (FAQ)"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Issue tracking"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Help, support, mailing lists, and forum"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "How to contribute"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Statistics"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Code of conduct"
+msgstr ""
+
+#: ../../../index.rst:14
+#: 
+msgid "Privacy policy"
+msgstr ""
+
+#: ../../../index.rst:51
+#: 
+msgid "System requirements"
+msgstr ""
+
+#: ../../../index.rst:51
+#: 
+msgid "Certified hardware"
+msgstr ""
+
+#: ../../../index.rst:51
+#: 
+msgid "Community-recommended hardware"
+msgstr ""
+
+#: ../../../index.rst:51
+#: 
+msgid "Hardware compatibility list (HCL)"
+msgstr ""
+
+#: ../../../index.rst:51
+#: 
+msgid "How to use the hardware compatibility list (HCL)"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Download Qubes OS"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Download mirrors"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Installation guide"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Installation security"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Custom installation"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Upgrade guides"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Supported releases"
+msgstr ""
+
+#: ../../../index.rst:70
+#: 
+msgid "Testing new releases and updates"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to organize your qubes"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to update"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to back up, restore, and migrate"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to copy and paste text"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to copy and move files"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to copy from dom0"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to install software"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use disposables"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to enter fullscreen mode"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use devices"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use block storage device"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use USB devices"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use PCI devices"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to use optical discs"
+msgstr ""
+
+#: ../../../index.rst:95
+#: 
+msgid "How to reinstall a template"
+msgstr ""
+
+#: ../../../index.rst:134
+#: ../../../index.rst:131
+#: 
+#: 638e2d912aa24bf9aff2585bdfeafb7a
+msgid "Templates"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "Fedora templates"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "How to upgrade a Fedora template in-place"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "Debian templates"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "How to upgrade a Debian template in-place"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "Minimal templates"
+msgstr ""
+
+#: ../../../index.rst:134
+#: 
+msgid "Xfce templates"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Installation troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Update troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Updating Debian and Whonix"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Hardware troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "UEFI troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Autostart troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Suspend/resume troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "App menu shortcut troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Qube troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "HVM troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Disk troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "PCI troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "USB troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "GUI troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "Media troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:157
+#: 
+msgid "VPN troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Firewall"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Data leaks"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Passwordless root access in qubes"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Device handling security"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Anti evil maid (AEM)"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "Split GPG"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "U2F proxy"
+msgstr ""
+
+#: ../../../index.rst:198
+#: 
+msgid "YubiKey"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "How to install software in dom0"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Volume backup and revert"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Standalones and HVMs"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Config files"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Secondary storage"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "RPC policies"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "USB qubes"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Managing qube kernels"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Salt (management software)"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "GuiVM Configuration"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Disposable customization"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Installing contributed packages"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "How to make any file persistent (bind-dirs)"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "GUI configuration"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Resize disk images"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "Qubes service"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "How to mount a Qubes partition from another OS"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "KDE (desktop environment)"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "i3 (window manager)"
+msgstr ""
+
+#: ../../../index.rst:223
+#: 
+msgid "AwesomeWM (window manager)"
+msgstr ""
+
+#: ../../../index.rst:272
+#: 
+msgid "Command-line tools"
+msgstr ""
+
+#: ../../../index.rst:272
+#: 
+msgid "Glossary"
+msgstr ""
+
+#: ../../../index.rst:285
+#: 
+msgid "Qubes OS project security center"
+msgstr ""
+
+#: ../../../index.rst:285
+#: 
+msgid "Qubes security pack (qubes-secpack)"
+msgstr ""
+
+#: ../../../index.rst:285
+#: 
+msgid "Verifying signatures"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Package contributions"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Google Summer of Code (GSoC)"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Google Season of Docs (GSoD)"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "How to edit the documentation"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Documentation style guide"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Website style guide"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Continuous integration (CI)"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Usability & UX"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Visual style guide"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Research"
+msgstr ""
+
+#: ../../../index.rst:306
+#: 
+msgid "Developer books"
+msgstr ""
+
+#: ../../../index.rst:337
+#: 
+msgid "Source code"
+msgstr ""
+
+#: ../../../index.rst:337
+#: 
+msgid "Software license"
+msgstr ""
+
+#: ../../../index.rst:337
+#: 
+msgid "Coding style"
+msgstr ""
+
+#: ../../../index.rst:337
+#: 
+msgid "Code signing"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Architecture"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Security design goals"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Security-critical code"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Qubes core admin"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Qubes core admin client"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Qubes core stack"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "GUI virtualization"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Networking"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Template implementation"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Storage pools"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Audio virtualization"
+msgstr ""
+
+#: ../../../index.rst:354
+#: 
+msgid "Template manager"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Inter-qube file copying (qfilecopy)"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qubes memory manager (qmemman)"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Disposable implementation"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Dom0 secure updates"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qrexec: secure communication across domains"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qrexec v2 (deprecated)"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qrexec: Qubes RPC internals"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qrexec: Socket-based services"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Admin API"
+msgstr ""
+
+#: ../../../index.rst:387
+#: 
+msgid "Qfileexchgd (deprecated)"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "How to set up a test bench"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "Automated tests"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "Python profiling"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "Qube configuration interface"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "Windows debugging"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "Safe remote dom0 terminals"
+msgstr ""
+
+#: ../../../index.rst:416
+#: 
+msgid "How to mount LVM images"
+msgstr ""
+
+#: ../../../index.rst:439
+#: 
+msgid "Qubes builder"
+msgstr ""
+
+#: ../../../index.rst:439
+#: 
+msgid "Qubes builder details"
+msgstr ""
+
+#: ../../../index.rst:439
+#: 
+msgid "Development workflow"
+msgstr ""
+
+#: ../../../index.rst:439
+#: 
+msgid "Qubes ISO building"
+msgstr ""
+
+#: ../../../index.rst:439
+#: 
+msgid "Qubes template configs"
+msgstr ""
+
+#: ../../../index.rst:458
+#: 
+msgid "Release notes"
+msgstr ""
+
+#: ../../../index.rst:458
+#: 
+msgid "Release schedules"
+msgstr ""
+
+#: ../../../index.rst:458
+#: 
+msgid "Release checklist"
+msgstr ""
+
+#: ../../../index.rst:458
+#: 
+msgid "Version scheme"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Windows qubes"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Template: Ubuntu"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Template: Whonix"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Template: CentOS"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Template: Gentoo"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Pentesting"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Pentesting: BlackArch"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Pentesting: Kali"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Pentesting: PTF"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Tips for Using Linux in an HVM"
+msgstr ""
+
+#: ../../../index.rst:482
+#: 
+msgid "Creating a NetBSD VM"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "Security Guidelines"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "Using Multi-factor Authentication with Qubes"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "How to Set Up a Split Bitcoin Wallet in Qubes"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "Split dm-crypt"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "Split SSH"
+msgstr ""
+
+#: ../../../index.rst:513
+#: 
+msgid "Using OnlyKey with Qubes OS"
+msgstr ""
+
+#: ../../../index.rst:534
+#: 
+msgid "Whonix for Privacy & Anonymity"
+msgstr ""
+
+#: ../../../index.rst:534
+#: 
+msgid "Running Tails in Qubes"
+msgstr ""
+
+#: ../../../index.rst:534
+#: 
+msgid "Anonymizing your MAC Address"
+msgstr ""
+
+#: ../../../index.rst:534
+#: 
+msgid "Signal"
+msgstr ""
+
+#: ../../../index.rst:534
+#: 
+msgid "Reducing the fingerprint of the text-based web browser w3m"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Qubes Tips and Tricks"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "How to set up a ProxyVM as a VPN Gateway"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Multibooting"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Changing your Time Zone"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Installing ZFS in Qubes"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Mutt Guide"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Postfix Guide"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Fetchmail Guide"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Creating Custom NetVMs and ProxyVMs"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "How to make proxy for individual tcp connection from networkless VM"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Adding Bridge Support to the NetVM (EXPERIMENTAL)"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Screen Sharing"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Enabling TRIM for SSD disks"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Configuring a Network Printer"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Using External Audio Devices"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Rxvt Guide"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "Adding SSD storage cache"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "How to Make a Multimedia TemplateVM"
+msgstr ""
+
+#: ../../../index.rst:553
+#: 
+msgid "How to install an Nvidia driver in dom0"
+msgstr ""
+
+#: ../../../index.rst:600
+#: 
+msgid "Customizing Fedora minimal templates"
+msgstr ""
+
+#: ../../../index.rst:600
+#: 
+msgid "Customizing Windows 7 templates"
+msgstr ""
+
+#: ../../../index.rst:600
+#: 
+msgid "Language Localization"
+msgstr ""
+
+#: ../../../index.rst:600
+#: 
+msgid "Dark Theme in Dom0 and DomU"
+msgstr ""
+
+#: ../../../index.rst:600
+#: 
+msgid "Safely Removing TemplateVM Packages (Example: Thunderbird)"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Nvidia troubleshooting guide"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Lenovo ThinkPad Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Apple MacBook Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Sony Vaio Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Intel Integrated Graphics Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Multiboot Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Application Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:624
+#: 
+msgid "Tails Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:649
+#: 
+msgid "Building a TemplateVM based on a new OS (ArchLinux example)"
+msgstr ""
+
+#: ../../../index.rst:649
+#: 
+msgid "Building the Archlinux Template"
+msgstr ""
+
+#: ../../../index.rst:649
+#: 
+msgid "Building the Whonix Templates"
+msgstr ""
+
+#: ../../../index.rst:649
+#: 
+msgid "How to compile kernels for dom0"
+msgstr ""
+
+#: ../../../index.rst:3
+#: bdce8f7c28c74ea4bfd834d753892be9
+msgid "Documentation"
+msgstr ""
+
+#: ../../../index.rst:7
+#: 02897bc18eda42d5bd7b7b8d5a11a4c5
+msgid "Table of contents"
+msgstr ""
+
+#: ../../../index.rst:42
+#: fb4fcd4d2f804c05b1cd93a80629dfef
+msgid "User Documentation"
+msgstr ""
+
+#: ../../../index.rst:45
+#: afd88e1f4eca4b2ea0348c6787ddcb6f
+msgid "Core documentation for Qubes users."
+msgstr ""
+
+#: ../../../index.rst:48
+#: 70939dad2a2c4f6a8f6d5ec7cff2aa93
+msgid "Choosing Your Hardware"
+msgstr ""
+
+#: ../../../index.rst:67
+#: 7fe2386708a648178de9fc257e13cd42
+msgid "Downloading, Installing, and Upgrading Qubes"
+msgstr ""
+
+#: ../../../index.rst:92
+#: b2a655c2968a4545966d6ce58892e941
+msgid "How-to guides"
+msgstr ""
+
+#: ../../../index.rst:154
+#: ../../../index.rst:619
+#: dbbea4230b964324ae49d3e4aaf7c227
+#: 2604b03b2dc148fca955b6b513a444fd
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../index.rst:195
+#: 09f024a9424e4e9d8ea9a7af39d9324a
+msgid "Security in Qubes"
+msgstr ""
+
+#: ../../../index.rst:220
+#: 97a2d85b284142ce83d1595ee2047960
+msgid "Advanced topics"
+msgstr ""
+
+#: ../../../index.rst:269
+#: 60af3cf6feb04bed961aff3c3c9494d9
+msgid "Reference"
+msgstr ""
+
+#: ../../../index.rst:282
+#: 612e6826dc034fbd9e67a9ff89c58bf4
+msgid "Project Security"
+msgstr ""
+
+#: ../../../index.rst:297
+#: d864f1d5f8974c3b83ea16b6255269a8
+msgid "Developer Documentation"
+msgstr ""
+
+#: ../../../index.rst:300
+#: 8faea5049a344f979a9e1c078b87ebc1
+msgid "Core documentation for Qubes developers and advanced users."
+msgstr ""
+
+#: ../../../index.rst:303
+#: 62e4997af27a4e8dbb8e483ad433c375
+msgid "General"
+msgstr ""
+
+#: ../../../index.rst:334
+#: 8c1c271a846c435cba9d3ea94c1c0bfe
+msgid "Code"
+msgstr ""
+
+#: ../../../index.rst:351
+#: 613cf5d6ee6345b3b30a3191e0656fc5
+msgid "System"
+msgstr ""
+
+#: ../../../index.rst:384
+#: 66be0b5e139c445f9b54c23a77f77897
+msgid "Services"
+msgstr ""
+
+#: ../../../index.rst:413
+#: 46af9a68e16a44ac859a7d3b1113ef9f
+msgid "Debugging"
+msgstr ""
+
+#: ../../../index.rst:436
+#: 9a06fe11e6da4695aecc7a298450e0f8
+msgid "Building"
+msgstr ""
+
+#: ../../../index.rst:455
+#: 093a2f0fcaa343ecbcc9d4f42e5f5157
+msgid "Releases"
+msgstr ""
+
+#: ../../../index.rst:472
+#: be49ee2169c04e5886da201189174f8f
+msgid "External Documentation"
+msgstr ""
+
+#: ../../../index.rst:475
+#: 365174f2db5b4a57afb29c076f453330
+msgid "Unofficial, third-party documentation from the Qubes community and others."
+msgstr ""
+
+#: ../../../index.rst:479
+#: 52597390f2c2465cb1c666502e783584
+msgid "Operating System Guides"
+msgstr ""
+
+#: ../../../index.rst:510
+#: 981bb9dfc81d4ec78894c68ee92f01e7
+msgid "Security Guides"
+msgstr ""
+
+#: ../../../index.rst:531
+#: 9e1512138c3a45e98034d078c71d2d1d
+msgid "Privacy Guides"
+msgstr ""
+
+#: ../../../index.rst:550
+#: 8f93c8987fe04a54b84d5283a309e55f
+msgid "Configuration Guides"
+msgstr ""
+
+#: ../../../index.rst:597
+#: 7c99f84e6f1e4ab6b4772b4f27dad354
+msgid "Customization Guides"
+msgstr ""
+
+#: ../../../index.rst:646
+#: bc46d4b353b34f2bbc136364fac48c62
+msgid "Building Guides"
+msgstr ""

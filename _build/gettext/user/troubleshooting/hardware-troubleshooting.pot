@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:3
+#: 8fcd14c163444f008d03ef330f03737e
+msgid "Hardware troubleshooting"
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:7
+#: fc445cbf0f724b72bc357b37589f0c65
+msgid "Audio doesn't work / Troubleshooting newer hardware"
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:10
+#: 89b44b898de4461595c3105337362757
+msgid "By default, the kernel that is installed in dom0 comes from the ``kernel`` package, which is an older Linux LTS kernel. For most cases this works fine since the Linux kernel developers backport fixes to this kernel, but for some newer hardware, you may run into issues. For example, the audio might not work if the sound card is too new for the LTS kernel. To fix this, you can try the ``kernel-latest`` package – though be aware that it’s less tested! (See :ref:`here <user/advanced-topics/how-to-install-software-in-dom0:kernel upgrade>` for more information about upgrading kernels in dom0). In dom0:"
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:26
+#: 2e671b0aebb6482d8968509de5c95a60
+msgid "Reboot when it’s done installing. You can double-check that the boot used the newer kernel with ``uname -r``, which prints the version of the currently-running kernel. Compare this with the output of ``rpm -q kernel``. If the start of ``uname -r`` matches one of the versions printed by ``rpm``, then you’re still using the Linux LTS kernel, and you’ll probably need to manually fix your boot settings. If ``uname -r`` reports a higher version number, then you’ve successfully booted with the kernel shipped by ``kernel-latest``."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:36
+#: ec976878fe0944d39507e9b53b4d3e08
+msgid "\"Unsupported Hardware Detected\" error"
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:39
+#: c339195c107c4c39a36080a365d6ba58
+msgid "See :ref:`Installation Troubleshooting <user/troubleshooting/installation-troubleshooting:\"unsupported hardware detected\" error>`."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:42
+#: f8a5ea4ad3684a05aed4652b43ea1526
+msgid "Keyboard layout settings not behaving correctly"
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:45
+#: eab922b47f2b4125afb3ebc6ce142c11
+msgid "The best approach is to choose the right keyboard layout during the installation process. But if you want to change things afterwards, you can try this workaround."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:49
+#: b3c9ceaf24024bc6a27bdbb3a5d2e83b
+msgid "Assuming XFCE desktop: in ``Q`` → ``System Tools`` → ``Keyboard`` → ``Layout``, leave the checkbox “ ``Use system defaults``” checked. Do not customize the keyboard layout here."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:53
+#: 7b3e4a79ab04434e9470aaa3954050ce
+msgid "Set the system-wide layout and options for ``xorg`` with the ``localectl`` command in ``dom0``. You can use ``localectl --help`` as a starting point."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:57
+#: 8d10a7bf7f2f4973bfc3147fcc266ab6
+msgid "Example: ``localectl set-x11-keymap us dell ,qwerty compose:caps``."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:59
+#: 34c255b63c6244d185f2aa30e3dfbe31
+msgid "This generates the appropriate configuration in ``/etc/X11/xorg.conf.d/00-keyboard.conf``. This file is auto-generated. Do not edit it by hand, unless you know what you are doing."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:63
+#: 9b2f715a937047828773a32845e5771a
+msgid "Restarting ``xorg`` is required. The most straightforward way is to reboot the system."
+msgstr ""
+
+#: ../../../user/troubleshooting/hardware-troubleshooting.rst:66
+#: 303e43756d1e473685c070149c1c2c62
+msgid "More information in `this discussion <https://groups.google.com/d/topic/qubes-devel/d8ZQ_62asKI/discussion>`__ and `this GitHub issue <https://github.com/QubesOS/qubes-issues/issues/1396>`__."
+msgstr ""

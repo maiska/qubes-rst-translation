@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../introduction/privacy.rst:3
+#: 84b88e4a31a24006a1c464479ea7b4c4
+msgid "Privacy policy"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:6
+#: 857690cd9315451eadf298a642e3c6ef
+msgid "The short version is that we try to respect your privacy as much as possible. We absolutely do not sell any user data. In fact, we go out of our way to help you keep your data private from everyone, including us. For example, from the moment you :doc:`install Qubes OS </user/downloading-installing-upgrading/installation-guide>`, we offer to set up `Whonix <https://www.whonix.org/>`__ so that all of your updates are routed through `Tor <https://www.torproject.org/>`__."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:14
+#: cdf8a7dd697946c39368275a3b7a11c7
+msgid "Website"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:17
+#: 062d11812c3d41a39fa0fc4a174c492b
+msgid "For the legally-required boilerplate, see `Website Privacy Policy <https://www.qubes-os.org/website-privacy-policy/>`__."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:19
+#: 5a3f27ac110748f5a85f16d58b2dcc4a
+msgid "This is just a static website generated with Jekyll and hosted from GitHub Pages. We try to use as little JavaScript as possible. We host all resources locally (no third-party CDNs) so that you only have to connect to one domain. This site should be easy to browse using Tor Browser and with scripts blocked. We also have an `onion service <http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/>`__ (access is not logged). We even go out of our way to make it easy to download `this website’s git repo <https://github.com/QubesOS/qubesos.github.io>`__, including all the website source code, so that you can host this entire site from your own local machine offline. Better yet, we’ve specifically written all of the :doc:`documentation </index>` in Markdown so that the plain text can be enjoyed from the comfort of your terminal. Here’s the `repo <https://github.com/QubesOS/qubes-doc>`__. (By the way, Git tags on our repos are PGP-signed so you can :doc:`verify </project-security/verifying-signatures>` the authenticity of the content.) Obviously, we don’t use any ads or trackers, but this is still a public website, so man-in-the-middle attacks and such are always a possibility. Please be careful. See :ref:`FAQ: Should I trust this website? <introduction/faq:should i trust this website?>`"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:38
+#: 9354f645296a4a4ab190f65cccd2d6f3
+msgid "Update Servers and Repositories"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:41
+#: 44929d70ee6a4113ba931507376e0191
+msgid "We provide repositories at https://yum.qubes-os.org and https://deb.qubes-os.org."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:44
+#: f615b44164744fe6a45fd57b4b94d3f9
+msgid "We collect and store standard server access and error logs, which include IP addresses. We use this data for generating :doc:`Qubes userbase statistics </introduction/statistics>` and for incident response."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:47
+#: b464ca17a4604e3e9ba3d95086434036
+msgid "The data is retained for up to three months so that we can re-calculate the previous two months’ statistics in case anything goes wrong. After that, the data is deleted. We never sell the data to anyone or share it with any third party."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:52
+#: df091602b67a49a69e182ed8289191b7
+msgid "If you would like to hide your IP address from us, we strongly encourage it and are happy to help you do so! Simply choose the Whonix option to route all of your updates over Tor when :doc:`installing Qubes OS </user/downloading-installing-upgrading/installation-guide>`."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:57
+#: 837f226cdfa34440b5d2f1359fd97688
+msgid "Onion Services"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:60
+#: fe3c35c6ab064cb28c03753f265abd3b
+msgid "We provide an `onion service <http://www.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion>`__ for the website and onion service mirrors of the repositories. Access to these servers is not logged."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:65
+#: 8fc4561c498b4127a396417ce8460e89
+msgid "Mirrors"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:68
+#: 665785ff9b9045e6afeda6c04e1fba47
+msgid "There are also other third-party mirrors hosted by volunteers. These are used both for `ISO downloads <https://www.qubes-os.org/downloads/#mirrors>__ and `updates <#update-servers-and-repositories>`__. We have no control over what data these mirrors collect or with whom they share it. Please see the privacy policy of each respective mirror operator."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:75
+#: 1e8e16b13241447cb526c6dcbf1a5667
+msgid "Qubes OS"
+msgstr ""
+
+#: ../../../introduction/privacy.rst:78
+#: f0ab4eb6eff34b02adc8cb75dc04e0ae
+msgid "We have specifically designed Qubes OS so that it is not possible to collect any data directly from Qubes OS installations. In other words, Qubes OS does not have the ability to “phone home” and is intentionally architected to forbid that from happening. This is mainly because we have ensured that dom0 has no network access."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:84
+#: 5fc365bbcc8f4f78a1f8458cabe9f57f
+msgid "We don’t want the ability to collect any data directly from Qubes OS installations, because if anyone has that power, then the system is not secure. We use Qubes OS ourselves as a daily driver for our work and personal lives, so our interests are aligned with yours. We want privacy too! Thankfully, Qubes OS is free and open-source software, so you don’t have to take our word for it."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:91
+#: facdb90b996d4715b209fe7ed629c265
+msgid "Of course, third-party software (including other operating systems) running inside of Qubes OS may not be as privacy-respecting, so please be mindful of what you install. We have no control over such third-party software."
+msgstr ""
+
+#: ../../../introduction/privacy.rst:96
+#: fd6fed3945f740bb81ecf6228551be4d
+msgid "For more information, please see :ref:`FAQ: How does Qubes OS provide privacy? <introduction/faq:how does qubes os provide privacy?>`"
+msgstr ""

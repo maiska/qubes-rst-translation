@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/building/qubes-iso-building.rst:3
+#: b6420952caea4a75836e84c5a04bec38
+msgid "Qubes ISO building"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:7
+#: 36c4f4834e3948239e20eefe49a1e579
+msgid "Build Environment"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:10
+#: a6306042ba19466cb0f750d4522827d6
+msgid "Fedora 32 has been successfully used to build Qubes R4.0 with the below steps. Other rpm-based operating systems may also work. Travis-CI uses Ubuntu 18.04 to perform test builds, except it can not test the ``./setup`` script."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:15
+#: 920df56b20784317afe3d34ae607c563
+msgid "In ``dom0``, install the Fedora 32 template if you don’t already have it."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:24
+#: 68c5a18a09fa47bc942b3880fb441d16
+msgid "Create a standalone AppVM from the Fedora 32 template. Set private storage to at least 60 GB if you will be building only the default templates; 100 GB or more if you plan on additional. It’s not required, but if you allocate additional CPU cores, the build process can utilize them at some steps such as the kernel build. Likewise, more memory (up to 16 GB) can help. Last, you may want to disable memory balancing, but keep in mind the impact on your other qubes."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:32
+#: 8a959193a339423d96b959ffa3bedcae
+msgid "Once you’ve built the development AppVM, open a Terminal window to it and install the necessary dependencies (see :doc:`QubesBuilder </developer/building/qubes-builder>` for more info):"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:42
+#: 936573778fd646c2bf85e84fdbad14df
+msgid "Get the necessary keys to verify the sources (run these and other commands below as a regular user, not root):"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:59
+#: f0d21a13417b48ff9f886492a0470fe0
+msgid "**Note** In the above process, we do *not* rely on the security of our server (keys.qubes-os.org) nor the connection (ssl, cert) – we only rely on you getting the Qubes Master Signing Key fingerprint *somehow* and ensuring they match! See :ref:`verifying signatures <project-security/verifying-signatures:how to import and authenticate the qubes master signing key>` for verification sources."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:65
+#: abf609318549486984f91f695db7be4a
+msgid "Now let’s bootstrap the builder. Unfortunately, the builder cannot verify itself (the classic Chicken and Egg problem), so we need to verify the signature manually:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:77
+#: 209ecf7d6c12467f99b7817f9a49c6ac
+msgid "**Note** It’s very important to check if the verification message contains “Good signature from …” and does not contain “WARNING: This key is not certified with a trusted signature!”."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:81
+#: dec2d7be6a7244f09e093242245a7435
+msgid "Assuming the verification went fine, we’re good to go with all the rest without ever thinking more about verifying digital signatures on all the rest of the components, apart from an additional step if doing a non-scripted build. The builder will do that for us for each component, every time we build, even for all auxiliary files (e.g. Xen or Linux kernel sources)."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:89
+#: 1058d643735d459da19df8e89eb34043
+msgid "Build using setup script"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:92
+#: 4da186d8b1db41a7baa5daeb89498e06
+msgid "Let’s configure the builder first (see :ref:`procedure <developer/building/qubes-iso-building:build using manual steps>` at bottom if you would prefer to manually configure):"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:114
+#: 263ed88537224c298d4ce44703efe471
+msgid "Once it completes downloading, re-run ``setup`` to add the Whonix templates:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:125
+#: ../../../developer/building/qubes-iso-building.rst:224
+#: f0f6c4dc72e24dcb96e2774b33c7d381
+#: 3fc0fddf49214a86a1219deadf811c79
+msgid "Continue the build process with:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:134
+#: 2931b1acb9394f068900494038739330
+msgid "When building the Whonix templates, you will often need to add/update the ``WHONIX_TBB_VERSION`` variable in ``builder.conf`` at this stage to specify the currently shipping Tor Browser version. See the related note under `Extra Whonix Build Options <https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md>`__."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:139
+#: 686e294ba33e420496e9334435eb9046
+msgid "You may also want to add ``COMPONENTS := $(filter-out gcc,$(COMPONENTS))`` to bypass a multiple hour compile step. See :ref:`QubesBuilder <developer/building/qubes-builder:use pre-built qubes packages>` for more detail."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:145
+#: ../../../developer/building/qubes-iso-building.rst:239
+#: ff855c63317b48ee9cfceb9214bf8d93
+#: d5a9896e7b8b46c1a1e78a7a160ac011
+msgid "Finally, if you are making a test build, use:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:154
+#: ../../../developer/building/qubes-iso-building.rst:248
+#: add4c9463e2c41cc83e9e10160a9dda0
+#: 231210ba22c74600ad233f24d3427f2d
+msgid "Or for a fully signed build (this requires setting ``SIGN_KEY`` in ``builder.conf``):"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:165
+#: ../../../developer/building/qubes-iso-building.rst:259
+#: 9b32e0092f3e49da9a62a49412e74be5
+#: d942d1c42fa045c6b91134b64e44bf9c
+msgid "Enjoy your new ISO!"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:168
+#: 3077274a07704a47be8bf44081dcf352
+msgid "Build using manual steps"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:171
+#: 43729c2430c34145b7f9339e4b272d20
+msgid "Instead of using ``./setup``, you can manually configure the build. The script takes care of a lot of the keyring preparation for us, so we first need to set that up."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:175
+#: a9936e223a454d8597f8daf581f59a3e
+msgid "If you will be building Whonix templates:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:185
+#: 95a7351503ec4bd197f8f3167a2ad59b
+msgid "**Note:** It’s very important to check the fingerprint displayed against multiple sources such as the `Whonix web site <https://www.whonix.org/wiki/Whonix_Signing_Key>`__, etc. It should look something like this:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:200
+#: 6f13092da1104ec1b77db7a8ad48ff35
+msgid "Next, prepare the Git keyring directory and copy them in:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:212
+#: 3c773da601624f5188a06e12138781fa
+msgid "Copy one of the example configurations:"
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:221
+#: 9cc32370d660420a996fd6a2ae196845
+msgid "Edit ``builder.conf``, referring to ``doc/Configuration.md`` for a description of all available options."
+msgstr ""
+
+#: ../../../developer/building/qubes-iso-building.rst:234
+#: 079eaebf07ec40ee8b9ac046e4d9a328
+msgid "When building the Whonix templates, you will often need to add/update the ``WHONIX_TBB_VERSION`` variable at this stage to specify the currently shipping Tor Browser version. See the related note under `Extra Whonix Build Options <https://github.com/Qubes-Community/Contents/blob/master/docs/building/building-whonix-template.md>`__."
+msgstr ""

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/code/license.rst:3
+#: dd12b2888fcc40b081037170b7cf3e2a
+msgid "Software license"
+msgstr ""
+
+#: ../../../developer/code/license.rst:6
+#: 4aafbc80e94b4355a86bbc1b614bc7c9
+msgid "Qubes OS is a compilation of software packages, each under its own license. The compilation is made available under the GNU General Public License version 2 (GPLv2). However, the license for this compilation does not supersede the license of any package included in the compilation."
+msgstr ""
+
+#: ../../../developer/code/license.rst:12
+#: 509fb1ba8524414196e3fc651ca65ac7
+msgid "The source code of Qubes OS is contained in repositories under the"
+msgstr ""
+
+#: ../../../developer/code/license.rst:13
+#: b3d2f5a40b824dd78eb15c62802fa53f
+msgid "`@QubesOS <https://github.com/QubesOS>`__ account on GitHub. This source"
+msgstr ""
+
+#: ../../../developer/code/license.rst:14
+#: feced8d50adf468281355e1f3242a40f
+msgid "code is made available under GPLv2, unless there is a ``LICENSE`` file in the root of the containing repository that specifies a different license."
+msgstr ""
+
+#: ../../../developer/code/license.rst:18
+#: 655e612ea2964156b95a1d6730bc25bf
+msgid "The full text of the GPLv2 license can be found `here <https://www.gnu.org/licenses/gpl-2.0.html>`__."
+msgstr ""

@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/templates/debian/debian-upgrade.rst:3
+#: b292a447e6094ff69bf99e16c2fa7743
+msgid "How to upgrade a Debian template in-place"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:7
+#: b49bbdc4756d4e6083d8e546c732b4ec
+msgid "Warning: This page is intended for advanced users only. Most users seeking to upgrade should instead install a new Debian template. Learn more about the two options here."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:12
+#: 722cffe4c1b44aa69f36530ec1b5dc36
+msgid "This page provides instructions for performing an in-place upgrade of an installed :doc:`Debian Template </user/templates/debian/debian>`. If you wish to install a new, unmodified Debian template instead of upgrading a template that is already installed in your system, please see the :doc:`Debian Template </user/templates/debian/debian>` page instead. (:ref:`Learn more about the two options. <user/templates/debian/debian:upgrading>`) In general, upgrading a Debian template follows the same process as `upgrading a native Debian system <https://wiki.debian.org/DebianUpgrade>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:21
+#: 082a6198e8bd4ba9b40526bdd3097970
+msgid "Summary instructions for Debian templates"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:24
+#: ../../../user/templates/debian/debian-upgrade.rst:54
+#: d23df850c50a43238009a6f92da6d34f
+#: d63773ccafcb4b7bbbcc587aea22ad38
+msgid "**Important:** The prompt on each line indicates where each command should be entered: ``dom0``, ``debian-<old>``, or ``debian-<new>``, where ``<old>`` is the Debian version number *from* which you are upgrading, and ``<new>`` is the Debian version number *to* which you are upgrading. The instructions may differ for certain releases. See `release-specific notes <#release-specific-notes>`__ for any instructions specific to your particular release."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:44
+#: 73c212c24d3f4f6ea1841ac07bdbd77b
+msgid "**Recommended:** :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:47
+#: de420fd8ecb64599b1d48d7b87a6797d
+msgid "Detailed instructions for Debian templates"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:50
+#: 045a31992422469a98ee9cd48e0486ed
+msgid "These instructions will show you how to upgrade Debian templates. The same general procedure may be used to upgrade any template based on the standard Debian template."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:62
+#: 2dd4d50bbf5c4087b82820f77241c8bb
+msgid "Ensure the existing template is not running."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:69
+#: 18b0863ebb8445bd8f7e8052c9aa7be8
+msgid "Clone the existing template and start a terminal in the new template."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:78
+#: 67855ae9fba84fc2a15ab11646b5ebaf
+msgid "Update your ``apt`` repositories to use the new release’s code name instead of the old release’s code name. (This can be done manually with a text editor, but ``sed`` can be used to automatically update the files.)"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:90
+#: 4a0c20226dde44ce9aa5d4bacbe5fd6f
+msgid "Update the package lists and upgrade. During the process, it may prompt you to overwrite the file ``qubes-r4.list``. You should overwrite this file."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:102
+#: f8e766023292452cafdadd9cce8e17d9
+msgid "(Optional) Remove unnecessary packages that were previously installed."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:111
+#: 540533d336814908919c3e583a6d6101
+msgid "(Optional) Clean cached packages from ``/var/cache/apt``."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:119
+#: b5f9cddd718c4a9fa39d21af0cf6c413
+msgid "(Optional) Trim the new template. (This should :ref:`no longer be necessary <user/templates/templates:important notes>`, but it does not hurt. Some users have `reported <https://github.com/QubesOS/qubes-issues/issues/5055>`__ that it makes a difference.)"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:132
+#: 8743b214412f499689e54c7f038e47b7
+msgid "Shut down the new template."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:139
+#: ba92aa75aabb40faa6b91438db7b74e8
+msgid "(Recommended) :ref:`Switch everything that was set to the old template to the new template. <user/templates/templates:switching>`"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:141
+#: eca6b63d8ea248babb964c774d3099a1
+msgid "(Optional) Make the new template the global default."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:148
+#: aa97ef6fde0a417e92007d299fc8c4df
+msgid "(Optional) :ref:`Uninstall the old template. <user/templates/templates:uninstalling>` Make sure that the template you’re uninstalling is the old one, not the new one!"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:154
+#: 0407201a2af54c628b7f4db0fd55f582
+msgid "Standalones"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:157
+#: 4eaf63d173294eb7870b3021258ce740
+msgid "The procedure for upgrading a Debian :doc:`standalone </user/advanced-topics/standalones-and-hvms>` is the same as for a template."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:161
+#: 6fc0f9bb9aba4e259d651c5139de6a26
+msgid "Release-specific notes"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:164
+#: 5c186e02c96f4cb18389d4886121ee60
+msgid "This section contains notes about upgrading to specific releases."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:167
+#: cce6e4e3c12544199522c36d48b3e57c
+msgid "Debian 11 (\"Bullseye\")"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:170
+#: dd21d48dae8d46418302e759c1740e3b
+msgid "Please see `Debian’s Bullseye upgrade instructions <https://www.debian.org/releases/bullseye/amd64/release-notes/ch-upgrading.en.html>`__. In particular: for APT source lines referencing the security archive, the format has changed slightly along with the release name, going from buster/updates to bullseye-security; see `Section 5.1.2, “Changed security archive layout” <https://www.debian.org/releases/stable/mips64el/release-notes/ch-information.en.html#security-archive>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:175
+#: ed9e30abb61545df8af0fe76fef52d13
+msgid "This means that, when upgrading from Buster to Bullseye, an additional ``sed`` command is required:"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:192
+#: 02a4adc55cc947a8bdcfd335d46553f0
+msgid "Debian 10 (\"Buster\")"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:195
+#: 095aef7914454c619fabbd463576e676
+msgid "Please see `Debian’s Buster upgrade instructions <https://www.debian.org/releases/buster/amd64/release-notes/ch-upgrading.en.html>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:198
+#: a254a4b593604cc7a358a34cb87ddd78
+msgid "Debian 9 (\"Stretch\")"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:201
+#: e3f63c6a7c944783a9c15fcf6c258856
+msgid "The upgrade process may prompt you to overwrite two files: ``qubes-r4.list`` and ``pulse/client.conf``. ``qubes-r4.list`` can be overwritten, but ``pulse/client.conf`` must be left as the currently-installed version."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:206
+#: dadf3ece33964180989020302e27a9f6
+msgid "If sound is not working, you may need to enable the Qubes testing repository to get the testing version of ``qubes-gui-agent``. This can be done by editing the ``/etc/apt/sources.list.d/qubes-r4.list`` file and uncommenting the ``Qubes   Updates Candidates`` repo."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:211
+#: 5f6c06066993449dafb43c0e9c5be7f3
+msgid "User-initiated updates/upgrades may not run when a template first starts. This is due to a new Debian config setting that attempts to update automatically; it should be disabled with ``sudo systemctl disable   apt-daily.{service,timer}``."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:218
+#: 7f365f2e8e4a4b2bb422aacf19f7b7ef
+msgid "Relevant discussions:"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:220
+#: 4494c40e631f45e0b3572da8ea134481
+msgid "`Stretch Template Installation <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/4rdayBF_UTc>`__"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:222
+#: b43bb64d298d4cc6973b226cf9611def
+msgid "`Stretch availability in 3.2 <https://groups.google.com/forum/#!topicsearchin/qubes-devel/debian$20stretch/qubes-devel/cekPfBqQMOI>`__"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:224
+#: a29764d187044bf8b21af9ce58d875be
+msgid "`Fixing sound in Debian Stretch <https://groups.google.com/forum/#!topic/qubes-users/JddCE54GFiU>`__"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:226
+#: 94dd2124857f46afb2ed55b713f8784c
+msgid "`User apt commands blocked on startup <https://github.com/QubesOS/qubes-issues/issues/2621>`__"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:230
+#: 8ad4d50a009541308dbf078e61f815af
+msgid "Also see `Debian’s Stretch upgrade instructions <https://www.debian.org/releases/stretch/amd64/release-notes/ch-upgrading.en.html>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:233
+#: 88f8e4e56daf4198a946ac6d7cd7a89d
+msgid "Debian 8 (\"Jessie\")"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:236
+#: 5ee091fc50a7477998d89ce2d28c42c2
+msgid "Please see `Debian’s Jessie upgrade instructions <https://www.debian.org/releases/jessie/amd64/release-notes/ch-upgrading.en.html>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:239
+#: aa48e3b57fb74cbbbc64a54572786b0f
+msgid "End-of-life (EOL) releases"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:242
+#: d58ac4f7465045d4a9204233af093b1e
+msgid "We strongly recommend against using any Debian release that has reached `end-of-life (EOL) <https://wiki.debian.org/DebianReleases#Production_Releases>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:246
+#: 7a3c5eefdf984ea2a443e8aa5ea3616b
+msgid "Additional information"
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:249
+#: ab31449c4fe84d84a873aa911405ca7e
+msgid "Please note that, if you installed packages from one of the :doc:`testing </user/downloading-installing-upgrading/testing>` repositories, you must make sure that the repository is enabled in ``/etc/apt/sources.list.d/qubes-r4.list`` before attempting the upgrade. Otherwise, your upgrade will `break <https://github.com/QubesOS/qubes-issues/issues/2418>`__."
+msgstr ""
+
+#: ../../../user/templates/debian/debian-upgrade.rst:255
+#: b56dbdcbf09544b38ee6ee2706560dac
+msgid "By default, Qubes uses code names in the ``apt`` sources files, although the templates are referred to by release number. Check the code names for the templates, and ensure you are aware of any changes you have made in the repository definitions."
+msgstr ""

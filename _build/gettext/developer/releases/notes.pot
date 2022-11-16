@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R1.0 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R2.0 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R3.0 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R3.1 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R3.2 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R4.0 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:6
+#: 
+msgid "Qubes R4.1 release notes"
+msgstr ""
+
+#: ../../../developer/releases/notes.rst:3
+#: 0a106329694848f99f25a1101f518cfe
+msgid "Release notes"
+msgstr ""

@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/releases/4_1/release-notes.rst:3
+#: 93dd21caf1dd42b593ed56bcc3314f9e
+msgid "Qubes OS 4.1 release notes"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:7
+#: 155206cb7d6a40b8bc4819e5284ec3de
+msgid "New features and improvements since Qubes 4.0"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:10
+#: d4182a0f969d4db28fdfcf2a6abb1fcb
+msgid "Optional qubes-remote-support package now available from repositories (strictly opt-in, no package installed by default; no new ports or network connections open by default; requires explicit connection initiation by the user, then requires sharing a code word with the remote party before a connection can be established; see `#6364 <https://github.com/QubesOS/qubes-issues/issues/6364>`__ for more information)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:18
+#: c08caa0c8ccb4f4895e56bf0d6aa832d
+msgid "Qubes firewall reworked to be more defensive (see `#5540 <https://github.com/QubesOS/qubes-issues/issues/5540>`__ for details)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:22
+#: a07c8c8876a24cfcb37b1022127c2fcb
+msgid "Xen upgraded to version 4.14"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:24
+#: 3e789dc66c09473fa78902d721daca16
+msgid "Dom0 operating system upgraded to Fedora 32"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:26
+#: e9d9441c3a1b4834a1fa36b820eb94fc
+msgid "Default desktop environment upgraded to Xfce 4.14"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:28
+#: 8c9010b2444e46a5b27296cf66a54386
+msgid "Upgraded default template releases"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:30
+#: 6bacdf74c8a74a1ea133917f4a3c07b9
+msgid "Experimental support for GUI running outside of dom0 (hybrid mode GUI domain without real GPU passthrough; see `#5662 <https://github.com/QubesOS/qubes-issues/issues/5662>`__ for details)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:35
+#: 2fa9c094f28b4951aa3f5a2bbeaa53f3
+msgid "Experimental support for audio server running outside of dom0 (“Audio domain”)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:38
+#: ea611baad9834410b8cc66aab83aa20b
+msgid "sys-firewall and sys-usb are now disposables by default"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:40
+#: b4a8cc7282da4f008f923a9b4c8e6d0d
+msgid "UEFI boot now loads GRUB, which in turn loads Xen, making the boot path similar to legacy boot and allowing the user to modify boot parameters or choose an alternate boot menu entry"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:44
+#: 39ba3765af624d0786173698b862d02e
+msgid "New qrexec policy format (see `#4370 <https://github.com/QubesOS/qubes-issues/issues/4370>`__ for details)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:48
+#: 05d78bacabe0461c93b5b1dc5fc21223
+msgid "qrexec protocol improvements (see `#4909 <https://github.com/QubesOS/qubes-issues/issues/4909>`__ for details)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:52
+#: e4bc528e24624036b49b2cca3689a616
+msgid "New qrexec-policy daemon"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:54
+#: 45b80ea4f30943eebda7acb0ac2be71a
+msgid "Simplified using in-qube kernels"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:56
+#: 9628d49ea92d4a46a4bb014558511cc4
+msgid "Windows USB and audio support courtesy of `tabit-pro <https://github.com/tabit-pro>`__ (see `#5802 <https://github.com/QubesOS/qubes-issues/issues/5802>`__ and `#2624 <https://github.com/QubesOS/qubes-issues/issues/2624>`__)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:61
+#: debc80a99b6344d09d394a915364dc1b
+msgid "Clarified disposable-related terminology and properties"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:63
+#: fe5ee4b9fd054b6c952913a3a812922c
+msgid "Default kernelopts can now be specified by a kernel package"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:65
+#: 89416d50d21f48f1a1fe28b1bc5f61d4
+msgid "Improved support for high-resolution displays"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:67
+#: b3c282debcea48438f9f5c0c682eaa3c
+msgid "Improved notifications when a system drive runs out of free space"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:69
+#: 8f941bdc4fbc466f993046912757ce08
+msgid "Support for different cursor shapes"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:71
+#: f69b5e93c5164919bfe0238505ef3031
+msgid "“Paranoid mode” backup restore option now properly supported using disposables"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:74
+#: 54cf3c5a2b964c7082ce7d9623940e74
+msgid "Users can now choose between Debian and Fedora in the installer"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:76
+#: 640b95af8c5043fc8e8ac59737381069
+msgid "Certain files and applications are now opened in disposables, e.g., Thunderbird email attachments"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:79
+#: c0e19b0abe994e0bb2f6f32a6d841fd9
+msgid "New graphical interface for managing testing repository updates"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:81
+#: fd8f559007c94bb090a47c593ddd62de
+msgid "New “Cute Qube” icon family (replaces padlock icons)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:83
+#: e1ac057434484bc2b7b9e1e532c5fe24
+msgid "Disposable qube types now use the disposable icon"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:85
+#: 338686a6b1ea49db8a5661fe0816c079
+msgid "New Template Manager tool for installing, removing, and updating templates (meanwhile, the tool previously known as the “Template Manager,” which was for mass template switching, has been integrated into the Qube Manager)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:90
+#: 09bba5a24508412ca61cbc8e430e5f1a
+msgid "The “file” storage driver has been deprecated in Qubes 4.1 and will be removed in Qubes 4.2"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:93
+#: 28bd042904af468592f241a3877210b3
+msgid "``property-del`` event renamed to ``property-reset`` to avoid confusion"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:96
+#: 548f3412b2774d9e9dc802487c879a62
+msgid "qrexec no longer supports non-executable files in ``/etc/qubes-rpc``"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:98
+#: b5987f567b184ff0b6441c2b5d72d37f
+msgid "qrexec components have been reorganized into the core-qrexec repository"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:101
+#: d0a79baffe5f4971b21103438f165d3a
+msgid "The ``qvm-pool`` argument parser has been rewritten and improved"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:103
+#: a7eb7a41e96c4d6390f8e5b1774e735c
+msgid "Removed the need for the out-of-tree u2mfn kernel module"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:105
+#: 688538c97fd848c08f812468316ebd27
+msgid "Qrexec services can now run as a socket server"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:107
+#: 607f70d36b8642d88599a45a6d63a7cc
+msgid "Improved template distribution mechanism"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:109
+#: 4e8150b165b547d8b8ea3e57cf205a7a
+msgid "Now possible to restart qrexec-agent"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:111
+#: 3816e005f5234baaab1671eda2eee708
+msgid "The term “VM” has largely been replaced by “qube”"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:113
+#: 79053532b0844ef091d775e69b39fee0
+msgid "GUI daemon is now configured using ``qvm-features`` tool, ``/etc/qubes/guid.conf`` file is no longer used"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:116
+#: af9cbde39f22474081f18cdb14f5f61a
+msgid "``qvm-run`` tool got ``--no-shell`` option to run a single command without using a shell inside the qube"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:119
+#: a3014bec1afc4e0983a7dc0bcfca1f9e
+msgid "MAC Randomization for iwlwifi (see `#938 <https://github.com/QubesOS/qubes-issues/issues/938>`__)"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:124
+#: f012cc77b93a4a16ae4daee56a8d611f
+msgid "For a full list, including more detailed descriptions, please see `here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aissue+sort%3Aupdated-desc+milestone%3A%22Release+4.1%22+label%3A%22release+notes%22+is%3Aclosed>`__."
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:128
+#: 8e231e40a6c8465691772a72f064d353
+msgid "Known issues"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:131
+#: ef23d98ad8814e2b9b557f2018ad09d0
+msgid "For a full list of known 4.1 issues with open bug reports, please see `here <https://github.com/QubesOS/qubes-issues/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+4.1%22+label%3A%22T%3A+bug%22>`__. We strongly recommend :doc:`updating Qubes OS </user/how-to-guides/how-to-update>` immediately after installation in order to apply any and all available bug fixes."
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:138
+#: 69db8dae03024bd586b9eec8d76a0484
+msgid "Download"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:141
+#: 7c8516ec93234a8493aeff1f3f8081d6
+msgid "See :doc:`downloads </user/downloading-installing-upgrading/downloads>`."
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:144
+#: 5b832ffac062471f87f43fe20a4fde93
+msgid "Installation instructions"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:147
+#: e7d04bc02f7147b99af12e31333e30e0
+msgid "See the :doc:`installation guide </user/downloading-installing-upgrading/installation-guide>`."
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:150
+#: 75e6091524534d4e89d4c76e51445078
+msgid "Upgrading"
+msgstr ""
+
+#: ../../../developer/releases/4_1/release-notes.rst:153
+#: ee20403963fa44978f52491afd9c400c
+msgid "Please see :doc:`how to upgrade to Qubes 4.1 </user/downloading-installing-upgrading/upgrade/4_1>`."
+msgstr ""

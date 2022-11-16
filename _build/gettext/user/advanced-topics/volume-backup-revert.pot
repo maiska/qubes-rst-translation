@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:3
+#: 467fcc84e3a74456a801aaa8ff0c360c
+msgid "Volume backup and revert"
+msgstr ""
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:6
+#: 81012d90b2de4be68c1a9fea4211a056
+msgid "With Qubes, it is possible to revert one of a VM’s storage volumes to a previous state using the automatic snapshot that is normally saved every time a VM is shutdown. (Note that this is a different, lower level activity than the :doc:`Backup, Restoration, and Migration </user/how-to-guides/how-to-back-up-restore-and-migrate>` process.)"
+msgstr ""
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:11
+#: 65185d15716f4820b10bdaa95a9e188b
+msgid "In Qubes, when you create a new VM, it’s volumes are stored in one of the system’s :doc:`Storage Pools </user/advanced-topics/secondary-storage>`. On pool creation, a revisions_to_keep default value is set for the entire pool. (For a pool creation example, see :doc:`Storing app qubes on Secondary Drives </user/advanced-topics/secondary-storage>`.) Thereafter, each volume associated with a VM that is stored in this pool inherits the pool default revisions_to_keep."
+msgstr ""
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:18
+#: 4c4740fb013b4688b685d84b669de28c
+msgid "For the private volume associated with a VM named vmname, you may inspect the value of revisions_to_keep from the dom0 CLI as follows:"
+msgstr ""
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:27
+#: 17225ea7f4f947e5beb1f81c1e13046d
+msgid "The output of the above command will also display the “Available revisions (for revert)” at the bottom. For a very large volume in a small pool, revisions_to_keep should probably be set to the minimum value of 1 to minimize the possibility of the pool being accidentally filled up by snapshots. For a smaller volume for which you would like to have the future option of reverting, revisions_to_keep should probably be set to at least 2. To set revisions_to_keep for this same VM / volume example:"
+msgstr ""
+
+#: ../../../user/advanced-topics/volume-backup-revert.rst:42
+#: 3dd40a277dbd4da99d8d4a8131bc2b37
+msgid "With the VM stopped, you may revert to an older snapshot of the private volume from the the above list of “Available revisions (for revert)”, where the last item on the list with the largest integer is the most recent snapshot:"
+msgstr ""

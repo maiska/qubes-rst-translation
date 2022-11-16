@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/debugging/profiling.rst:3
+#: 50d980f831c94fb198a0939d2fe34b46
+msgid "Python profiling"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:6
+#: 8483d80f6fe349e2b69d9afbdc5a9649
+msgid "This is a python profiling primer."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:8
+#: 7aa5ef445c424fb18bc3d4d32eeaceb4
+msgid "For the purpose of this document, ``qubes-dev`` is name of the domain used for postprocessing profiling stats."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:12
+#: 66257b55f3c14df8b8f2410acf9c81c3
+msgid "Requirements"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:22
+#: 32cdbcb1322348e8a5b8ec57d8a53846
+msgid "If you profile something in dom0, move ``Upload.sh`` from the repository to dom0:"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:32
+#: 87ac475b8ae0425fbbbbd5904e8269f2
+msgid "WARNING: this will obviously be running third-party code which is not signed by ITL nor Fedora. You have been warned."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:38
+#: 23a5b8ac9422428aac60ec2b5134a32d
+msgid "Workflow"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:42
+#: cd728fd3231c44959693428fc51efac1
+msgid "Identify function responsible for some slow action"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:45
+#: e10d984bccbd46449a3cb7d0b2c4a916
+msgid "You have to select the area in which you suspect less than optimal performance. If you do not narrow the area, graphs may be unreadable."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:49
+#: 7279fc21c0cd4d3593a96320ad4fa6de
+msgid "Replace suspect function with probe"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:52
+#: 567f22271dc24bbebde23c586d04771b
+msgid "Replace"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:60
+#: 4f73b946be6e4197bbe1deeee53c3763
+msgid "with"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:73
+#: 242df8b07836432ba1025b892df876d2
+msgid "Run application"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:76
+#: 45df2eb3b51944adb8971f98923dbd72
+msgid "Beware that some functions may be called often. For example ``qubesmanager/main.py:update_table`` gets run once per second. This will produce one pstat file per second."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:80
+#: 4d46a6b17dfa4b8da0d004dc5c35d802
+msgid "Remember to revert your changes to the application afterwards."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:83
+#: 9b314a48aed54b65b343237e37bcbbb9
+msgid "Upload statistics"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:86
+#: 2f53f80970c74b29b0486a93b00b9fce
+msgid "If you are in dom0:"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:96
+#: 2c9cc299e8204df8a21ad39426a56879
+msgid "Analyse"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:105
+#: 1384404d06d243f7941778c73e291bd3
+msgid "For every ``${basename}.pstats`` this will produce ``${basename}.txt`` and ``${basename}.svg``. SVG files contain call graphs. Text files contain lists of all functions, sorted by cumulative execution time. You may also try ``make all-png``."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:116
+#: 30aaf80d88d548f18c56b8b3e45d9db2
+msgid "This creates ``index.html`` with all SVG graphics linked to TXT files, ready for upload."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:126
+#: 8b2c5903cf444902acdfbe0f4f20138b
+msgid "Example"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:129
+#: f50a9d449ff8474a97f9688d60630401
+msgid "This example is from ``qubes-manager`` (``qubesmanager/main.py``)."
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:134
+#: ../../../developer/debugging/profiling.rst:134
+#: 8bd7ce31b844426f88d453ceb468a6b7
+#: 2d570d05168a4fbc867ad22850fc61e2
+msgid "“update_table-20140424-170010.png”"
+msgstr ""
+
+#: ../../../developer/debugging/profiling.rst:136
+#: de9ade85eb754f0891e6cbcfec023e83
+msgid "It is apparent that the problem is around ``get_disk_usage``, which calls something via ``subprocess.call``. It does this 15 times, probably once per VM."
+msgstr ""

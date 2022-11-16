@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:3
+#: 84447476cd7b46eab61f526b7a0f202b
+msgid "How to mount a Qubes partition from another OS"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:6
+#: 1ae8009707a0495696dd5dc527e6c7c4
+msgid "When a Qubes OS install is unbootable or booting it is otherwise undesirable, this process allows for the recovery of files stored within the system."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:10
+#: 9143e989b01b4d099637c2478fb04c88
+msgid "These functions are manual and do not require any Qubes specific tools. All steps assume the default Qubes install with the following components: - LUKS encrypted disk - LVM based VM storage"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:14
+#: 6300e9fb059045f79ce4653062b74b8c
+msgid "Before beginning, if attempting to access one Qubes system from another, it is recommended to pass the entire encrypted Qubes disk to an isolated app qube. This can be done with the command ``qvm-block attach <isolated vm> dom0:<disk>`` in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:20
+#: 418c0f9992994f78a3bbbc872ef603e5
+msgid "Decrypting the Disk"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:23
+#: 4f8db719792b4bd28ba0861cee90ab50
+msgid "Find the disk to be accessed:"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:25
+#: f132654a600e4562a4624b93fcc85043
+msgid "Open a Linux terminal in either dom0 or the app qube the disk was passed through to and enter ``lsblk``, which will result in an output similar to the following. In this example, the currently booted Qubes system is installed on ``sda`` and the qubes system to be accessed is on ``nvme0n1p2``."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:61
+#: 319d4618c218465ba0362ff463eb0949
+msgid "Decrypt the disk using the command ``cryptsetup luksOpen /dev/<disk>``."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:67
+#: 6f38948a112d4f6695d481f34e7ada89
+msgid "Accessing LVM Logical Volumes"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:70
+#: 6a08ad64edcf48f881397cb8b46811cc
+msgid "If using an app qube or standard Linux, LVM should automatically discover the Qubes LVM configuration. In this case, continue to step 4."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:74
+#: 78d0bf00bffa4f84972e884720ce592b
+msgid "Qubes uses the default name ``qubes_dom0`` for it’s LVM VG. This will conflict with the name of the VG of the currently installed system. To read both, you will have to rename the VG. *Note:* If this is not reversed, the Qubes install being accessed will not be bootable."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:80
+#: 755ccbcff41245f785f48451bc6785a7
+msgid "Find the UUID of the vg to be accessed using the command ``vgdisplay``. This will be the VG named ``qubes_dom0`` which is not marked active."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:84
+#: 1ed75e22a6a849f8a4708fd32cc32b40
+msgid "The command ``vgrename <UUID> other_install`` will rename the VG."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:88
+#: f21c508b13d94498b77bd9b80c056712
+msgid "Run the command ``vgscan`` to add any new VGs to the device list."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:95
+#: e87f9e472fe84a77a97cc9ea82561ab3
+msgid "Mounting the disk"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:98
+#: 9367fbae6ffa47de8d1f4bb8efeb9e3f
+msgid "Find the disk to be accessed. The ``lsblk`` command above may be of use. The following rules apply by default:"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:110
+#: 66d6ffdec8ce422aa96788e25388c436
+msgid "Disk name"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:111
+#: 3382134cf4454a4794ab4a59705da725
+msgid "Data type"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:112
+#: 4b4a311736f84e30adda9861c5496a9f
+msgid "Explanation"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:113
+#: fd1d67bb7c9c4a32a487d1574fed0102
+msgid "other_install/root"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:114
+#: 2eff723ef19f43528357074d45791989
+msgid "dom0 root"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:115
+#: 574fa6a280af4eb4bd0d8eadf9a6aab1
+msgid "The root partition of dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:116
+#: 7f44282a8a2a4241a865c5eeff525ebd
+msgid "ot her_install/-private"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:117
+#: b568d1c063294f50b465c56f99256448
+msgid "VM"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:118
+#: ef78d1ae36f64018bc099e59a889aad3
+msgid "The /rw partition of the named VM."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:119
+#: f84d10734b4c46739bb26dcafb626f39
+msgid "other_install/-root"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:120
+#: 3c1401f984ef4fa4a6cbf8240aa6f4e9
+msgid "template root"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:121
+#: 1796637893ce4b7fbae8615035ff4898
+msgid "The root partition of the named template."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:122
+#: 807195d293384d208fa83907ac0a314f
+msgid "other install/pool00_tmeta"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:123
+#: 5c80ca361b38406aae93e625822a9c00
+msgid "LVM Metadata"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:124
+#: c475a73275c3420b80814d0f5562f2f0
+msgid "The metadata LV of this disk."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:128
+#: 16b3f52c76524fceb476dedf97cc1133
+msgid "Mount the disk using the command ``mount /dev/other_install/<lv name> <mountpoint>``. *Note:* Any compromised data which exists in the volume to be mounted will be accessible here. Do not mount untrusted partitions in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:137
+#: 9f61ab3930b64dec91312b44998721a1
+msgid "At this point, all files are available in the chosen mountpoint."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:140
+#: df42fc189806496db18844bb0eee857a
+msgid "Reverting Changes"
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:143
+#: b251ba2079454d5f9c38a7c0254cad4d
+msgid "Any changes which were made to the system in the above steps will need to be reverted before the disk will properly boot. However, LVM will not allow an VG to be renamed to a name already in use. Thes steps must occur either in an app qube or using recovery media."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:148
+#: 4553cdde3e744258ab7135854cc7a1c9
+msgid "Unmount any disks that were accessed."
+msgstr ""
+
+#: ../../../user/advanced-topics/mount-from-other-os.rst:150
+#: 7ebbb367d4be4b129a8f5c74ad732f4f
+msgid "Rename the VG back to qubes_dom0 using the command ``vgrename other_install qubes_dom0``."
+msgstr ""

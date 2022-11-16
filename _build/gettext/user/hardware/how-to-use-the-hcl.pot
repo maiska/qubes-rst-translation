@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:3
+#: a30fb8a0754143f3947b1e53a40442b7
+msgid "How to use the hardware compatibility list (HCL)"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:6
+#: 78ee8b4dd6324cfb9efb57978c2bf4d7
+msgid "The :doc:`HCL </user/hardware/hcl>` is a compilation of reports generated and submitted by users across various Qubes versions about their hardware’s compatibility with Qubes."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:10
+#: 8c4563528e3249eea3f6000cf7db07e0
+msgid "**Note:** Except in the case of developer-reported entries, the Qubes team has not independently verified the accuracy of these reports. Please first consult the data sheets (CPU, chipset, motherboard) prior to buying new hardware for Qubes. Make sure it meets the :doc:`System Requirements </user/hardware/system-requirements>` and search in particular for support of:"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:16
+#: 66d25f9d9218415ba6ba032cf8863e13
+msgid "HVM (“AMD virtualization (AMD-V)”, “Intel virtualization (VT-x)”, “VIA virtualization (VIA VT)”)"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:19
+#: 470adeb9172b42f89c263e0b5a18454c
+msgid "IOMMU (“AMD I/O Virtualization Technology (AMD-Vi)”, “Intel Virtualization Technology for Directed I/O (VT-d)”)"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:22
+#: 493fd2bc4c6d433691dcf3ee40c4e04d
+msgid "TPM (“Trusted Platform Module (TPM)” connected to a “20-pin TPM header” on motherboards.)"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:27
+#: 801cfcbdc8ed4393a30e59f5f0be7d8e
+msgid "If using the list to make a purchasing decision, we recommend that you choose hardware with:"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:30
+#: fa70114d36864bd98cf40c3781b50082
+msgid "the best achievable Qubes security level (green columns in HVM, IOMMU, TPM)"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:33
+#: 222ac6a269274007add41122d5716dc3
+msgid "and general machine compatibility (green columns in Qubes version, dom0 kernel, remarks)."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:38
+#: f44fbe8f65ca4b4f865900c43a4f9434
+msgid "Also see :doc:`Certified Hardware </user/hardware/certified-hardware>`."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:41
+#: 263135a8a3124a88bdd5e12bffc29121
+msgid "Generating and Submitting New Reports"
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:44
+#: 9bc1181a648741b4852593b4e9699cdb
+msgid "In order to generate an HCL report in Qubes, simply open a terminal in dom0 (Applications Menu > Terminal Emulator) and run ``qubes-hcl-report <qube-name>``, where ``<qube-name>`` is the name of the qube in which the generated HCL files will be saved."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:49
+#: 1d8b66baf6094852b86188d8ca1e5a21
+msgid "You are encouraged to submit your HCL report for the benefit of further Qubes development and other users. When submitting reports, test the hardware yourself, if possible. If you would like to submit your HCL report, please copy and paste the contents of the **HCL Info** ``.yml`` file into an email to the :ref:`qubes-users mailing list <introduction/support:qubes-users>` with the subject ``HCL - <your machine model name>``, or create a post in the `HCL Reports category <https://forum.qubes-os.org/c/user-support/hcl-reports/23>`__ of the forum. Pasting the contents into the email or post has the advantage that members of the mailing list and the forum can see the report without downloading and opening a file. In addition, new forum members are unable to attach files to posts."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:60
+#: 8a0ee4d0a9494a90b01e7164cfdae734
+msgid "Please include any useful information about any Qubes features you may have tested (see the legend below), as well as general machine compatibility (video, networking, sleep, etc.). Please consider sending the **HCL Support Files** ``.cpio.gz`` file as well. To generate these add the ``-s`` or ``--support`` command line option."
+msgstr ""
+
+#: ../../../user/hardware/how-to-use-the-hcl.rst:66
+#: 0e5cad6feed2400e975ef6ee02ac7ef2
+msgid "**Please note:** The **HCL Support Files** may contain numerous hardware details, including serial numbers. If, for privacy or security reasons, you do not wish to make this information public, please **do not** post the ``.cpio.gz`` file on a public mailing list or forum."
+msgstr ""

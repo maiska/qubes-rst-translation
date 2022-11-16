@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/how-to-guides/how-to-update.rst:3
+#: 8507f99d43174d0cab627bcf459c7b25
+msgid "How to update"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:6
+#: d3afb2a66497411cbd03a31f60b98689
+msgid "*This page is about updating your system while staying on the same* :ref:`supported version of Qubes OS <user/downloading-installing-upgrading/supported-releases:qubes os>` *. If you’re instead looking to upgrade from your current version of Qubes OS to a newer version, see the* :doc:`Upgrade Guides </user/downloading-installing-upgrading/upgrade/upgrade>` *.*"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:9
+#: 66b2a491c4e74c6ba6e94d3907883fc6
+msgid "Security updates"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:12
+#: 04bd6b87002649d98a7ce231f13d8a97
+msgid "Security updates are an extremely important part of keeping your Qubes installation secure. When there is an important security issue, we will issue a `Qubes Security Bulletin (QSB) <https://www.qubes-os.org/security/qsb/>`__ via the :title-reference:`Qubes Security Pack (``qubes-secpack``) </security/pack/>`__. It is very important to read each new QSB and follow any user instructions it contains. Most of the time, simply `updating your system normally <#routine-updates>`__ will be sufficient to obtain security updates. However, in some cases, special action may be required on your part, which will be explained in the QSB."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:22
+#: 9b8ce54ebd0f4e45956b334d90b85dca
+msgid "Routine updates"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:25
+#: 4b20b429ed5b42ada63619d4eda69759
+msgid "It is important to keep your Qubes OS system up-to-date to ensure you have the latest `security updates <#security-updates>`__, as well as the latest non-security enhancements and bug fixes."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:29
+#: 31ac6e8a06ec48508cbab865fee6cb9a
+msgid "Fully updating your Qubes OS system means updating:"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:31
+#: fecf536f0404455ea3e5c870841ffefa
+msgid ":ref:`dom0 <user/reference/glossary:dom0>`"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:33
+#: e51ad3054fa04fe782c09f9007df2402
+msgid ":ref:`templates <user/reference/glossary:template>`"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:35
+#: 943f24b8a2334c8a95baa010faf1948a
+msgid ":ref:`standalones <user/reference/glossary:standalone>` (if you have any)"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:39
+#: 4750f5ff76e846a79c7c702c916420c7
+msgid "You can accomplish this using the **Qubes Update** tool."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:41
+#: b09bc6cd09624e29a43ab3d65c71fc80
+msgid "|Qubes Update|"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:0
+#: ../../../user/how-to-guides/how-to-update.rst:0
+#: 1d963c4d8dbc4962b44f9f60004a969a
+#: 4c9906e521824d69a6f9a189033cae5d
+msgid "Qubes Update"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:43
+#: e86b38a1e9be4311aee29d5a578899e4
+msgid "By default, the Qubes Update tool will appear as an icon in the Notification Area when updates are available."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:46
+#: 68c28b72b6934e01a6bda3165490659d
+msgid "|Qube Updates Available|"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:0
+#: ../../../user/how-to-guides/how-to-update.rst:0
+#: 79e36b80d5be46139c155bc8027f8028
+#: c90bd254e70a447cb0654def662226d4
+msgid "Qube Updates Available"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:48
+#: 5f667d91847b49c39d70ccd24378dccc
+msgid "However, you can also start the tool manually by selecting it in the Applications Menu under “Qubes Tools.” Even if no updates have been detected, you can use this tool to check for updates manually at any time by selecting “Enable updates for qubes without known available updates,” then selecting all desired items from the list and clicking “Next.”"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:56
+#: 016502f1a6334fa3a08cc5e93a31f988
+msgid "For information about how templates download updates, please see Why don’t templates have network access? and the Updates proxy."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:60
+#: 33e2c72cce574c52a0fffb6c46e7d25c
+msgid "By default, most qubes that are connected to the internet will periodically check for updates for their parent templates. If updates are available, you will receive a notification as described above. However, if you have any templates that do *not* have any online child qubes, you will *not* receive update notifications for them. Therefore, you should regularly update such templates manually instead."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:68
+#: 7f864add5e084a268bbf41b4c118f744
+msgid "Command-line interface"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:72
+#: f59d5e5d10024239a3e4f4c57dd0c999
+msgid "Warning: Updating with direct commands such as qubes-dom0-update, dnf update, and apt update is not recommended, since these bypass built-in Qubes OS update security measures. Instead, we strongly recommend using the Qubes Update tool or its command-line equivalents, as described below. (By contrast, installing packages using direct package manager commands is fine.)"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:80
+#: 8e2757e7bd1c4315ba9cdfc31ab10d4f
+msgid "Advanced users may wish to perform updates via the command-line interface. The recommended way to do this is by applying the following two Salt states. **Applying these two Salt states is the same as updating via the Qubes Update tool.**"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:84
+#: 2af66163065442968f1706f993aaaa61
+msgid ":ref:`update.qubes-dom0 <user/advanced-topics/salt:\\`\\`update.qubes-dom0\\`\\`>`"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:86
+#: 32249351f09d4c7a9cc4f801b8ab30af
+msgid ":ref:`update.qubes-vm <user/advanced-topics/salt:\\`\\`update.qubes-vm\\`\\`>`"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:90
+#: b15b1e9b65364f4986f779f94e03befb
+msgid "In your update qube, a terminal window opens that displays the progress of operations and output as it is logged. At the end of the process, logs are sent back to dom0. You answer any yes/no prompts in your dom0 terminal window."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:95
+#: c16ebf88da5a4af5a1616dea0688b07f
+msgid "Advanced users may also be interested in learning :doc:`how to enable the testing repos </user/downloading-installing-upgrading/testing>`."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:98
+#: 64606f8881d6470e9e183fe08d66daeb
+msgid "Upgrading to avoid EOL"
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:101
+#: c7ea590823d54d1ca9c973d3ea55f546
+msgid "The above covers updating *within* a given operating system (OS) release. Eventually, however, most OS releases will reach **end-of-life (EOL)**, after which point they will no longer be supported. This applies to Qubes OS itself as well as OSes used in :doc:`templates </user/templates/templates>` (and :doc:`standalones </user/advanced-topics/standalones-and-hvms>`, if you have any)."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:107
+#: 896581a8068f46f3b614eca7d31ca84f
+msgid "**It’s very important that you use only supported releases so that you continue to receive security updates.** This means that you *must* periodically upgrade Qubes OS and your templates before they reach EOL. You can always see which versions of Qubes OS and select templates are supported on the :doc:`Supported Versions </user/downloading-installing-upgrading/supported-releases>` page."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:112
+#: d77a7ed4085540499cf7c972a6b8a947
+msgid "In the case of Qubes OS itself, we will make an `announcement <https://www.qubes-os.org/news/categories/>`__ when a supported Qubes OS release is approaching EOL and another when it has actually reached EOL, and we will provide :doc:`instructions for upgrading to the next stable supported Qubes OS release </user/downloading-installing-upgrading/upgrade/upgrade>`."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:117
+#: 30c5e52fc8c14079b25a144d498d715d
+msgid "Periodic upgrades are also important for templates. For example, you might be using a :doc:`Fedora template </user/templates/fedora/fedora>`. The `Fedora Project <https://getfedora.org/>`__ is independent of the Qubes OS Project. They set their own `schedule <https://fedoraproject.org/wiki/Fedora_Release_Life_Cycle#Maintenance_Schedule>`__ for when each Fedora release reaches EOL. You can always find out when an OS reaches EOL from the upstream project that maintains it. We also pass along any EOL notices we receive for official template OSes as a convenience to Qubes users (see :ref:`Supported Versions: Templates <user/downloading-installing-upgrading/supported-releases:templates>`)."
+msgstr ""
+
+#: ../../../user/how-to-guides/how-to-update.rst:127
+#: 6d42ebf0d7a643fba0b4fcd7e81a9b4c
+msgid "The one exception to all this is the specific release used for dom0 (not to be confused with Qubes OS as a whole), which :ref:`doesn’t have to be upgraded <user/downloading-installing-upgrading/supported-releases:note on dom0 and eol>`."
+msgstr ""

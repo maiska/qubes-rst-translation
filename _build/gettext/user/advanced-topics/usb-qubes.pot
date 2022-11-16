@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/advanced-topics/usb-qubes.rst:3
+#: f590f5ffad5c4890a7de3d53fcbfd5fc
+msgid "USB qubes"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:6
+#: ec0e7cf1da21429ca3bac74f5cbb2193
+msgid "A USB qube acts as a secure handler for potentially malicious USB devices, preventing them from coming into contact with dom0 (which could otherwise be fatal to the security of the whole system). It thereby mitigates some of the :ref:`security risks of using USB devices <user/security-in-qubes/device-handling-security:usb security>`. Nonetheless, we strongly recommend carefully reading the :ref:`security warning on USB input devices <user/security-in-qubes/device-handling-security:security warning on usb input devices>` before proceeding."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:13
+#: 94f7d2d42be24ee6aa00b1eaf3177a01
+msgid "With a USB qube, every time you connect an untrusted USB device to a USB port managed by that USB controller, you will have to attach it to the qube in which you wish to use it (if different from the USB qube itself)."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:18
+#: 81b2399dce654839a9393b75c0e3f182
+msgid "If you opted to allow the Qubes installer to create a USB qube for you during the installation process, then you should already have a working USB qube, and no further action should be required. However, if you do not have a USB qube, wish to remove the one you have, or have run into some other related problem, this page can help."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:25
+#: be664816452840bc8e9ec5e70240a3ba
+msgid "USB keyboards"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:28
+#: cbc63930ced0423d92cc144e1a78dbfd
+msgid "If you use a USB keyboard, there is a high risk of locking yourself out of your system when experimenting with USB qubes. For example, if a USB qube takes over your sole USB controller (to which your USB keyboard is connected), then your keyboard will no longer be able to control dom0. This will prevent you from performing many essential tasks, such as entering your decryption and login passphrases, rendering your system unusable until you reinstall. This section covers various options for addressing this problem."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:37
+#: c2dc7c7f99cb4363b4d2288ceae3e98d
+msgid "In general, PS/2 keyboards are preferable to USB keyboards. However, many newer computer models lack PS/2 ports. Moreover, while most laptops use PS/2 connections for the keyboard internally, some use USB. (Check yours by examining the output of the ``lsusb`` command.) If you have a PS/2 port but still wish to use a USB keyboard, then having a backup PS/2 keyboard handy can be useful in case you accidentally lock yourself out of your system."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:46
+#: 1f3129630e194104bb66604cbf64a1c3
+msgid "How to create a USB qube for use with a USB keyboard"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:49
+#: e1095cef65e7476b967a05945a10ab28
+msgid "If you’re reading this section, it’s likely because the installer did not allow you to create a USB qube automatically because you’re using a USB keyboard. This section will explain how to create a USB qube that you can use with your USB keyboard. This section assumes that you have only a single USB controller. If you have more than one USB controller, see `how to enable a USB keyboard on a separate USB controller <#qubes-41-how-to-enable-a-usb-keyboard-on-a-separate-usb-controller>`__."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:56
+#: 9ff779d17de6404c9b705a0ff6a2ad4b
+msgid "First, make sure you have the latest ``qubes-mgmt-salt-dom0-virtual-machines`` package by :ref:`updating dom0 <user/advanced-topics/how-to-install-software-in-dom0:how to update dom0>`. Then, enter the following command in dom0:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:66
+#: aea0b42c6e8b493e978399acb220b4b9
+msgid "This command will take care of all required configuration, including creating a USB qube if not already present. Note, however, that this setup will expose dom0 to USB devices while you are entering your LUKS passphrase. While only input devices (keyboards, mice, etc.) are initialized at this stage, users are advised to physically disconnect other devices from the system during this vulnerable window in order to minimize the risk."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:74
+#: d4ecacf33c8c4f8ab09d1227eac078b7
+msgid "To undo these changes, see `how to remove a USB qube <#how-to-remove-a-usb-qube>`__."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:76
+#: 63927a4521b54b8d9966189f3ab92e0a
+msgid "If you wish to perform only a subset of this configuration (for example, you do not wish to enable the USB keyboard during boot), see the manual instructions below."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:81
+#: 534bcc0169514b0095eaf35a663120b6
+msgid "Manual setup for USB keyboards"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:84
+#: 87b8b07eeb0a4a6eb64e74e322dc487a
+msgid "In order to use a USB keyboard, you must first attach it to a USB qube, then give that qube permission to pass keyboard input to dom0. Edit the ``qubes.InputKeyboard`` policy file in dom0, which is located here:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:94
+#: e0ec2e3351f74baabe709730bcaea5a6
+msgid "Add a line like this one to the top of the file:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:102
+#: ../../../user/advanced-topics/usb-qubes.rst:214
+#: 0bf907a6eec84aa898aa3711c998b3f3
+#: 60a990f96e4f41469cea706179d34e01
+msgid "(Change ``sys-usb`` to your desired USB qube.)"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:104
+#: c38191f19301467c91a82deccd9ecf58
+msgid "You can now use your USB keyboard to log in to your dom0 user account (after LUKS decryption)."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:107
+#: f8215aa48f5c4a828e06947ba9dee279
+msgid "You can set up your system so that there’s a confirmation prompt each time the USB keyboard is connected. However, this will effectively disable your USB keyboard for dom0 user account login and the screen locker, so **don’t do this if you want to log into and unlock your device with a USB keyboard!** If you’re sure you wish to proceed, change the previous line to:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:119
+#: a24fd10ef1a042c093fbb7760994f92f
+msgid "If you wish to use a USB keyboard to enter your LUKS passphrase, you cannot `hide its USB controller from dom0 <#how-to-hide-usb-controllers-from-dom0>`__. If you’ve already hidden that USB controller from dom0, you must revert the procedure by removing the ``rd.qubes.hide_all_usb`` option and employ an alternative strategy for protecting your system by physically disconnecting other devices during startup."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:126
+#: 74e6baed745b46c49ba62fbd702b31e8
+msgid "**Qubes 4.1 only:** You should also add the ``usbcore.authorized_default=0`` option, which prevents the initialization of non-input devices. (Qubes ships with a USBGuard configuration that allows only input devices when ``usbcore.authorized_default=0`` is set.)"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:133
+#: 1151dd25d7574d51819995d805d949a1
+msgid "Qubes 4.1: How to enable a USB keyboard on a separate USB controller"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:136
+#: e23ee8395e1b4ce9831cdee028f9a86a
+msgid "When using a USB keyboard on a system with multiple USB controllers, we recommend that you designate one of them exclusively for the keyboard (and possibly the mouse) and keep other devices connected to the other controller(s). This is often an option on desktop systems, where additional USB controllers can be plugged in as PCIe cards. In this case, the designated controller for input devices should remain in dom0 but be limited to input devices only. To set it up:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:144
+#: fa4b749ca9bc4d4491ccef002aef472e
+msgid ":ref:`Find the controller used for input devices <user/how-to-guides/how-to-use-usb-devices:finding the right usb controller>`."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:146
+#: ../../../user/advanced-topics/usb-qubes.rst:302
+#: ../../../user/advanced-topics/usb-qubes.rst:333
+#: d024c058c74240088d93a5da0115cb0e
+#: 716d369ed7404c5c924e4acc12614344
+#: 55f5a18f1f8b4b7c80c55d6d63150166
+msgid "Open the file ``/etc/default/grub`` in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:148
+#: ../../../user/advanced-topics/usb-qubes.rst:304
+#: 40c2287a09874339b38decb0ddb5f61b
+#: a19ec6d17d444b1987e11e422e46b86d
+msgid "Find the line that begins with ``GRUB_CMDLINE_LINUX``."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:150
+#: 51108a38cbf6488baf8a690ca970d056
+msgid "Add ``usbcore.authorized_default=0`` and ``rd.qubes.dom0_usb=<BDF>`` to that line, where ``<BDF>`` is the USB controller identifier."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:153
+#: ../../../user/advanced-topics/usb-qubes.rst:308
+#: ../../../user/advanced-topics/usb-qubes.rst:340
+#: ../../../user/advanced-topics/usb-qubes.rst:363
+#: 2031554eac494b959df770167f4ea770
+#: 11ed85dc65f54d07ad043bc6931e0a71
+#: c8e3253b1bc740d0bd4f021a1507145a
+#: 3c0120e8434a447d8753145130e7e47a
+msgid "Save and close the file."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:155
+#: ../../../user/advanced-topics/usb-qubes.rst:310
+#: 43ff1d19b09344e6a251546f33cb8db5
+#: 81f9300821f64c5ea2e9458c869cff90
+msgid "Run the command ``grub2-mkconfig -o /boot/grub2/grub.cfg`` (legacy boot) or ``grub2-mkconfig -o /boot/efi/EFI/qubes/grub.cfg`` (EFI) in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:159
+#: ../../../user/advanced-topics/usb-qubes.rst:314
+#: ../../../user/advanced-topics/usb-qubes.rst:344
+#: ../../../user/advanced-topics/usb-qubes.rst:365
+#: 58f7afffc6294d46a6f6278b017ff7b5
+#: 32aeaf267e414719bf3a5eca3ba32d4b
+#: ea7872f9145643af930e8ee986e3d891
+#: 190d35b6ff3e44868b98a4b74cab9ac5
+msgid "Reboot."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:161
+#: 00953379d5024e0b9f9cfec1a193c339
+msgid "Proceed with `creating a USB qube <#how-to-create-a-usb-qube>`__ normally. The selected USB controller will remain in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:166
+#: 4a3c77d91b3747daa41c609265f2da04
+msgid "These options can be added during installation. (When the installer prompts for a reboot, you can switch to tty2 and perform the steps from there, after using the ``chroot /mnt/sysimage`` command.) In that case, the initial setup will create a USB qube automatically, even when a USB keyboard is in use (as long as it is connected to the designated controller)."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:174
+#: da55ef112a324a1eae122f03ef7593c7
+msgid "USB mice"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:177
+#: 0f1c254331d14a788647f10a956f9d50
+msgid "Handling a USB mouse isn’t as critical as handling a keyboard, since you can log in and proceed through confirmation prompts using the keyboard alone."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:181
+#: 96a9200e57fe40d08667de89a78cb262
+msgid "If you want to attach the USB mouse automatically anyway, you have to edit the ``qubes.InputMouse`` policy file in dom0, located at:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:190
+#: 80d7245000ce45b8a499c108c88fb93d
+msgid "The first line should read similar to:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:198
+#: 812295cff25346c2b0891372f1ea0da5
+msgid "There will now be a confirmation prompt each time a USB mouse is attached."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:201
+#: a9226b70a8094822be7483b7da539211
+msgid "If the file is empty or does not exist, something might have gone wrong during setup. Try to rerun ``qubesctl state.sls qvm.sys-usb`` in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:204
+#: 5de26d1aa763498c8d7aa68db540156a
+msgid "In case you are absolutely sure you do not want to confirm mouse access from ``sys-usb`` to ``dom0``, you may add the following line to the top of the file:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:217
+#: 1cc3fe8ccf2b440aabf9f46b25c1eebe
+msgid "How to create a USB qube"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:220
+#: 0f6dc23d9ee5454bb89ee479c227b412
+msgid "If `automatically creating a USB qube for use with a USB keyboard <#how-to-create-a-usb-qube-for-use-with-a-usb-keyboard>`__ does not apply to your situation, then you may be interested in more general methods for creating USB qubes."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:224
+#: 5a3ecd1663f64ac98a515179c7770cfd
+msgid "You can create a USB qube using the management stack by executing the following command as root in dom0:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:234
+#: dc217f631ae1425882df7e79bd7cec03
+msgid "Manual creation"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:237
+#: 582aa4ca13b94991b39253297780cf88
+msgid "You can create a USB qube manually as follows:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:239
+#: 52e642cf986043c495286a993967589d
+msgid "Read the :doc:`PCI devices </user/how-to-guides/how-to-use-pci-devices>` page to learn how to list and identify your USB controllers. Carefully check whether you have a USB controller that would be appropriate to assign to a USB qube. Note that it should be free of input devices, programmable devices, and any other devices that must be directly available to dom0. If you find a free controller, note its name and proceed to the next step."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:247
+#: 5b53dda82c4b4109b0d717712a66af81
+msgid "Create a new qube. Give it an appropriate name and color label (recommended: ``sys-usb``, red)."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:250
+#: 7b2257133de4474a8d6b9dc2bcbae439
+msgid "In the qube’s settings, go to the “Devices” tab. Find the USB controller that you identified in step 1 in the “Available” list. Move it to the “Selected” list by highlighting it and clicking the single arrow ``>`` button. (**Warning:** By assigning a USB controller to a USB qube, it will no longer be available to dom0. This can make your system unusable if, for example, you have only one USB controller, and you are running Qubes off of a USB drive.)"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:258
+#: bb7994e9df02418d82f4d5748fc158b5
+msgid "Click ``OK``. Restart the qube."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:260
+#: e197c3ea219549088f2e649632c019ce
+msgid "Recommended: Check the box on the “Basic” tab that says “Start VM automatically on boot.” (This will help to mitigate attacks in which someone forces your system to reboot, then plugs in a malicious USB device.)"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:267
+#: d7497ec368db4ed3b6b0f3150e11003d
+msgid "If the USB qube will not start, please have a look at :ref:`this FAQ entry <introduction/faq:i created a usb vm and assigned usb controllers to it. now the usb vm won't boot.>`."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:270
+#: 712b12980d734206a3fac979c9b73ce5
+msgid "How to hide USB controllers from dom0"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:273
+#: 4251b2a633b74abc954cc1946e267453
+msgid "USB controllers are automatically hidden from dom0 if you opt to create a USB qube during installation. This also occurs automatically if you choose to `create a USB qube <#how-to-create-a-usb-qube>`__ using the ``qubesctl`` method. However, if you create a USB qube manually and do not hide USB controllers from dom0, there will be a brief period of time during the boot process when dom0 will be exposed to your USB controllers (and any attached devices). This is a potential security risk, since even brief exposure to a malicious USB device could result in dom0 being compromised. There are two approaches to this problem:"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:283
+#: 219f7fb45a0f4a3387cb6763b28a8879
+msgid "Physically disconnect all USB devices whenever you reboot the host."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:285
+#: 11e9dfbf4d904528b6b78628f7b46e8f
+msgid "Hide (i.e., blacklist) all USB controllers from dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:289
+#: c36044938edc47889fb803616f2fce92
+msgid "**Warning:** If you use a USB keyboard, hiding your USB controllers from dom0 could lock you out of your system. See `USB keyboards <#usb-keyboards>`__ for more information."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:292
+#: e3e906e60f8a4fbaa12cb1aa25bc114a
+msgid "**Warning:** Using a USB AEM device requires dom0 to have access to the USB controller to which your USB AEM device is attached. If dom0 cannot read your USB AEM device, AEM will hang."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:296
+#: fc5eff365d0e45e29e3cf4101ab111f1
+msgid "The following procedure will hide all USB controllers from dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:299
+#: f6cdb1090f1940deb11cb0093b0c3c64
+msgid "GRUB2 (legacy boot or EFI)"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:306
+#: 142c6f13f89149bbacab6abd361067e0
+msgid "Add ``rd.qubes.hide_all_usb`` to that line."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:319
+#: 9c2a185503e04cecaca88a92b77d2cd7
+msgid "How to remove a USB qube"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:322
+#: 582f7b2bd12f4b718344377a8b3698bb
+msgid "**Warning:** This procedure will result in your USB controller(s) being attached directly to dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:326
+#: 1b821845dc004792b1e2d027a4e648df
+msgid "GRUB2"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:329
+#: ../../../user/advanced-topics/usb-qubes.rst:352
+#: 4c1167798d4843ecb18bbb58eacea898
+#: 0ea7dd9af913422fb1a6db05c9dff686
+msgid "Shut down the USB qube."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:331
+#: ../../../user/advanced-topics/usb-qubes.rst:354
+#: 9b299a4a8a214d7d894d9ef74a5f59f7
+#: 6cf0bec8126e4d288c00aa26369f19b9
+msgid "In Qubes Manager, right-click on the USB qube and select “Remove VM.”"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:335
+#: 2d6f91e83e1848209df4c91bf637b4a7
+msgid "Find the line(s) that begins with ``GRUB_CMDLINE_LINUX``."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:337
+#: ../../../user/advanced-topics/usb-qubes.rst:360
+#: 682d95cdffca45ce8e95d28d9483d90d
+#: 55e7bc90091c470eb4cf762f2c13b607
+msgid "If ``rd.qubes.hide_all_usb`` appears anywhere in those lines, remove it."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:342
+#: eacc693d5a024764ad6220044847f303
+msgid "Run the command ``grub2-mkconfig -o /boot/grub2/grub.cfg`` in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:349
+#: 79b9cf2767c248999d3fb585e488189e
+msgid "Qubes 4.0: EFI"
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:356
+#: ea035407507b4ddbb0dfa5b89ec6336d
+msgid "Open the file ``/boot/efi/EFI/qubes/xen.cfg`` in dom0."
+msgstr ""
+
+#: ../../../user/advanced-topics/usb-qubes.rst:358
+#: c12bf9cfecb7411f87c2631f1a96cd53
+msgid "Find the line(s) that begins with ``kernel=``."
+msgstr ""

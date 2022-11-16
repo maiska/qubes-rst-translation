@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer/general/package-contributions.rst:3
+#: 95d8890aca7543c09c92ce13888f5ac0
+msgid "Package contributions"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:6
+#: 68493b8ee24a4d0697a04103bcd9e718
+msgid "*This page is for developers who wish to contribute packages. If you want to install contributed packages, please see* :doc:`installing contributed packages </user/advanced-topics/installing-contributed-packages>` *.*"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:8
+#: 8c59480a26c443caaf19c6024040d779
+msgid "We’re very grateful to the talented and hard-working community members who contribute software packages to Qubes OS. This page explains the inclusion criteria and procedures for such packages, as well as the roles and responsibilities of those involved."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:14
+#: f55b898a76c84aa682e96a5d2c83c767
+msgid "Inclusion Criteria"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:17
+#: addc31f24ed048cb8cc07cd9cc2903e0
+msgid "In order to be accepted, packages must:"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:19
+#: a8a7c16832bd4ee191e1133e991116a0
+msgid "In no way weaken the security of Qubes OS."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:21
+#: 816d6f0efa9c4fedbed4fd04cb60c412
+msgid "Be published under an open-source license (read about the :doc:`Qubes OS License </developer/code/license>`)."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:23
+#: 3eaa81cdd12d484283b5746d01cff20b
+msgid "Follow our :doc:`coding guidelines </developer/code/coding-style>`."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:25
+#: 5738f2994cb34964b39bab4916c89edc
+msgid "Be thoroughly tested."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:27
+#: 29a0ed44d513472db5dde14532686294
+msgid "Have a clearly-defined use case for Qubes users."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:29
+#: f033ec464c444386b754ec8b6b4a1fe8
+msgid "Not be unduly burdensome to review."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:33
+#: 8c17623651c342e399e42f95135e4236
+msgid "(Please note that we always reserve the right to add criteria to this list.)"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:37
+#: fda0de6f64a3407b9b914b44835856f5
+msgid "Contribution Procedure"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:40
+#: 7471a7c961914be597fd20f04b54e05c
+msgid "Before you start putting serious work into a package, we recommend that you discuss your idea with the Qubes developers and the broader community on the :ref:`qubes-devel mailing list <introduction/support:qubes-devel>`. Once you have a package that’s ready to become part of Qubes OS, please follow this procedure:"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:46
+#: cf5e3f799c064856b907723e01dec1b5
+msgid "Ensure that your package satisfies the `Inclusion Criteria <#inclusion-criteria>`__."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:48
+#: 46c880da8c324ac0b79180241cfcc612
+msgid "If your code isn’t already on GitHub, create a GitHub repo that contains your code. You can have a look to an example package called `qubes-skeleton <https://github.com/QubesOS-contrib/qubes-skeleton>`__."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:52
+#: bcdd907eb2a74eb8b2132581ad861e31
+msgid "If you haven’t already, :doc:`sign your code </developer/code/code-signing>`."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:54
+#: 682122d6117740b69e7bfe1472a510a8
+msgid "Create an issue in `qubes-issues <https://github.com/QubesOS/qubes-issues/issues/>`__ with the title ``[Contribution] your-package-name``. Include a link to your repo, a brief description of your package, and a brief explanation of why you think it should be included in Qubes. Please note that the Qubes core developers are very busy. If they are under heavy load when you submit your contribution, it may be a very long time before they have time to review your package. If this happens, please do not be discouraged. If you think they may have forgotten about your pending contribution, you may “bump” your request by commenting on your issue, but please do this *very* sparingly (i.e., no more than once a month). We appreciate your understanding!"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:67
+#: 2c078c69edf84aa79b94e64d77518366
+msgid "You may be asked followup questions. If we decide to accept your contribution, you will be invited to join the `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ organization on GitHub as public recognition of your contribution (but without push access; see `Review Procedure <#review-procedure>`__), and `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ will fork your repo. If we decide not to accept your contribution, we will state the reason and close the issue."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:79
+#: c1c0b4c1523443118379f6ba90665dbc
+msgid "Update Procedure"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:82
+#: 90abf4cc594e41499d6dd6845740d545
+msgid "*Anyone* can provide an update (patch) to a contributed package, not just the person who contributed that package! The update procedure is the same for everyone, including the original package contributor."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:86
+#: 6d21398a219d4a8d99c242eb20e0c439
+msgid "If you would like to update an already-contributed package (specifically, a fork owned by `QubesOS-contrib <https://github.com/QubesOS-contrib>`__), please submit a :doc:`signed </developer/code/code-signing>`, fast-forwardable pull request to that repo with your changes. Please note that your pull request **must** be both :doc:`signed </developer/code/code-signing>` and fast-forwardable, or else it will be closed without further review. One or more reviewers may post comments on your pull request. Please be prepared to read and respond to these comments."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:97
+#: 87e12b8b8fa045afbc2c746a3899083a
+msgid "Review Procedure"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:100
+#: c0acdb60aea84ad28a5340df632aefa4
+msgid "This review procedure covers both original package contributions (see `Contribution Procedure <#contribution-procedure>`__) and all subsequent updates to those packages, including updates from the original package contributor (see `Update Procedure <#update-procedure>`__). All changes will be reviewed by a Qubes Core Reviewer (QCR) and the `Package Maintainer <#package-maintainers>`__ (PM). In all cases, the QCR will be a core Qubes developer. In some cases, the QCR and the PM will be the same person. For example, if someone contributes a package, then disappears, and no suitable replacement has been found, then it is likely that a core Qubes developer will play both the QCR and PM roles for that package, at least until another suitable candidate volunteers to become the PM for that package."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:112
+#: 2d86896629154b4da8c1887bfc5935af
+msgid "The review procedure is as follows:"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:114
+#: e0fca971fad54605952951fbe4f1f738
+msgid "Someone, S, wishes to make a change to a package, P."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:116
+#: 35f332a1cf234b20b5efe0b35f46b799
+msgid "S submits a fast-forwardable pull request against the fork of P’s repo owned by `QubesOS-contrib <https://github.com/QubesOS-contrib>`__."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:120
+#: 19943724a5274b15a9098000be611448
+msgid "The PM reviews the pull request. If the the pull request passes the PM’s review, the PM adds a :doc:`signed </developer/code/code-signing>` *comment* on the pull request stating that it has passed review. (In cases in which S = PM, the PM can simply add a :doc:`signed </developer/code/code-signing>` *tag* to the HEAD commit prior to submitting the pull request.) If the pull request does not pass the PM’s review, the PM leaves a comment on the pull request explaining why not."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:128
+#: ef0b06bc29204b958317222d92bb1ca8
+msgid "The QCR reviews the pull request. If the pull request passes the QCR’s review, the QCR pushes a :doc:`signed </developer/code/code-signing>` tag to the HEAD commit stating that it has passed review and fast-forward merges the pull request. If the pull request does not pass the QCR’s review, the QCR leaves a comment on the pull request explaining why not, and the QCR may decide to close the pull request."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:137
+#: 3e6b72b6b5cc4616aa445d9b2e511d28
+msgid "In all the cases, the first condition to be validated by the QCR’s review is to ensure that the contribution **will not** hijack any core packages of `QubesOS <https://github.com/QubesOS>`__ and of course, none of the `QubesOS-contrib <https://github.com/QubesOS-contrib>`__ packages too. More precisely, particular attention to the whole build pipeline will be made with a specific review of:"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:144
+#: 8b370e99ea3a416c88c4dbf572678b2f
+msgid "Package dependencies,"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:146
+#: b1d6effb0bbc4d7882fd37205bfa74d7
+msgid "Build scripts (including downloaded ones),"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:148
+#: 46a3d9085fb443bca946f9fb61b24a6a
+msgid "All downloaded components should be verified against static hash,"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:150
+#: df6a3e34407c4a06822479636e2285da
+msgid "RPM/DEB installation scripts (e.g. looking at constraints who would hijack other packages),"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:153
+#: bf6a634b93e9432b82ce51a242d91a23
+msgid "Makefiles,"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:155
+#: a6306f6ad5d74ebd823b8c9927d26400
+msgid "Package build `reproducible <https://reproducible-builds.org/>`__"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:159
+#: a1eadd1f3066440bbf4eac90f041dafd
+msgid "and any steps which would result in partial/total compromise of legitimate components. For this part, you can have a look to an example package called `qubes-skeleton <https://github.com/QubesOS-contrib/qubes-skeleton>`__."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:165
+#: 289243e6eb4649919ee96b212a937bb7
+msgid "Package Maintainers"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:168
+#: 9cd21768ab1d4a52919ff73060b8be30
+msgid "If you contribute a package, we assume that you will be the maintainer of that package, unless you tell us otherwise. As the maintainer of the package, it is your privilege and responsibility to:"
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:172
+#: 21bb7e0ef7644004ae9c5eb8d7ac874c
+msgid "`Review <#review-procedure>`__ each pull request made against the package."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:175
+#: 16ef8dd158444ca7b54ace9c52fd86b5
+msgid "Decide when the package has reached a new version, and notify the Qubes core developers when this occurs."
+msgstr ""
+
+#: ../../../developer/general/package-contributions.rst:180
+#: b982dae8803940f0a08f1ce0f3916e2a
+msgid "If you do not wish to be the maintainer of your package, please let us know. If you do not act on your maintainer duties for a given package for an extended period of time and after at least one reminder, we will assume that you no longer wish to be the maintainer for that package."
+msgstr ""

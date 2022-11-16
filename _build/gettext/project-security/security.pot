@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../project-security/security.rst:3
+#: 4d4040e9244c41f382cc4f9096e71274
+msgid "Qubes OS project security center"
+msgstr ""
+
+#: ../../../project-security/security.rst:6
+#: 6495c30ea5af489daa76830a24976709
+msgid "This page provides a central hub for topics pertaining to the security of the Qubes OS Project. For topics pertaining to software security *within* Qubes OS, see :ref:`security in Qubes <index:security in qubes>`. The following is a list of important project security pages:"
+msgstr ""
+
+#: ../../../project-security/security.rst:11
+#: 1a4b7e88440e4c42bf427aaa4592142c
+msgid ":doc:`Qubes security pack (qubes-secpack) </project-security/security-pack>`"
+msgstr ""
+
+#: ../../../project-security/security.rst:13
+#: 51f7061789ee455897bb5bb9cdea03bb
+msgid "`Qubes security bulletins (QSBs) <https://www.qubes-os.org/security/qsb/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:15
+#: 2ef724a860b64ec0bbe34eadada2f829
+msgid "`Qubes canaries <https://www.qubes-os.org/security/canary/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:17
+#: d486097923984bcf8aa9580ad7c282f9
+msgid "`Xen security advisory (XSA) tracker <https://www.qubes-os.org/security/xsa/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:19
+#: 61ac0a08f79f49358bdeff9f8e32a2ee
+msgid ":doc:`Verifying signatures </project-security/verifying-signatures>`"
+msgstr ""
+
+#: ../../../project-security/security.rst:21
+#: c64e835125374d6abd5eca78f78bff9f
+msgid "`PGP keys <https://keys.qubes-os.org/keys/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:23
+#: 48144e57f63943989bede4018669766b
+msgid ":ref:`Security FAQ <introduction/faq:general \\& security>`"
+msgstr ""
+
+#: ../../../project-security/security.rst:28
+#: 9e4b39a35187452da8a3e1c74b2f508e
+msgid "Reporting security issues in Qubes OS"
+msgstr ""
+
+#: ../../../project-security/security.rst:32
+#: 2d8c66d6e3fd4882877acf6472253c30
+msgid "Please note: The Qubes security team email address is intended for responsible disclosure by security researchers and others who discover legitimate security vulnerabilities. It is not intended for everyone who suspects they’ve been hacked. Please do not attempt to contact the Qubes security team unless you can demonstrate an actual security vulnerability or unless the team will be able to take reasonable steps to verify your claims."
+msgstr ""
+
+#: ../../../project-security/security.rst:41
+#: cd231dfbe8d045e6a3b6d53fa63fbd8e
+msgid "If you’ve discovered a security issue affecting Qubes OS, either directly or indirectly (e.g., the issue affects Xen in a configuration that is used in Qubes OS), then we would be more than happy to hear from you! We promise to take all reported issues seriously. If our investigation confirms that an issue affects Qubes, we will patch it within a reasonable time and release a public `Qubes security bulletin (QSB) <https://www.qubes-os.org/security/qsb/>`__ that describes the issue, discusses the potential impact of the vulnerability, references applicable patches or workarounds, and credits the discoverer. Please use the `Qubes security team PGP key <https://keys.qubes-os.org/keys/qubes-os-security-team-key.asc>`__ to encrypt your email to this address:"
+msgstr ""
+
+#: ../../../project-security/security.rst:57
+#: 64522f0492a04f6096c0e959a0f0c19d
+msgid "This key is signed by the `Qubes Master Signing Key <https://keys.qubes-os.org/keys/qubes-master-signing-key.asc>`__. Please see :doc:`verifying signatures </project-security/verifying-signatures>` for information about how to authenticate these keys."
+msgstr ""
+
+#: ../../../project-security/security.rst:62
+#: 4905871c6d3c4a208647dec251a0439d
+msgid "Security updates"
+msgstr ""
+
+#: ../../../project-security/security.rst:65
+#: dfce38710449467889d90c92c7ffce48
+msgid "Qubes security updates are obtained by :doc:`updating Qubes OS </user/how-to-guides/how-to-update>`."
+msgstr ""
+
+#: ../../../project-security/security.rst:68
+#: d04d6772a0ea45fab2dda66663076822
+msgid "Qubes security team"
+msgstr ""
+
+#: ../../../project-security/security.rst:71
+#: e5c227ffc3fc4928881a8c365312e643
+msgid "The **Qubes security team (QST)** is the subset of the `core team <https://www.qubes-os.org/team/#core-team>`__ that is responsible for ensuring the security of Qubes OS and the Qubes OS Project. In particular, the QST is responsible for:"
+msgstr ""
+
+#: ../../../project-security/security.rst:75
+#: 38e4e4fb699c448dac4179589dbc6e6d
+msgid "Responding to `reported security issues <#reporting-security-issues-in-qubes-os>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:77
+#: 273edbab40f44dcf91a8000500eef5f8
+msgid "Evaluating whether `XSAs <https://www.qubes-os.org/security/xsa/>`__ affect the security of Qubes OS"
+msgstr ""
+
+#: ../../../project-security/security.rst:80
+#: dc8b9c6c80ae465e9e7b603b53252b7c
+msgid "Writing, applying, and/or distributing security patches to fix vulnerabilities in Qubes OS"
+msgstr ""
+
+#: ../../../project-security/security.rst:83
+#: 98ceff29be7641db8a1b254fd7c391ef
+msgid "Writing, signing, and publishing `Qubes security bulletins (QSBs) <https://www.qubes-os.org/security/qsb/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:85
+#: e4466f40c6cf4c54a75ebcb9ea915c19
+msgid "Writing, signing, and publishing `Qubes canaries <https://www.qubes-os.org/security/canary/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:87
+#: 6efd1d3c22274679a6fddda778c9bdaf
+msgid "Generating, safeguarding, and using the project’s `PGP keys <https://keys.qubes-os.org/keys/>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:91
+#: e94cd3b8174045ada6211c9bee1c8d1a
+msgid "As a security-oriented operating system, the QST is fundamentally important to Qubes, and every Qubes user implicitly trusts the members of the QST by virtue of the actions listed above."
+msgstr ""
+
+#: ../../../project-security/security.rst:96
+#: b994bed9a9ce44be9a0297e56b182629
+msgid "Members of the security team"
+msgstr ""
+
+#: ../../../project-security/security.rst:99
+#: fc989adf084044d98927f979ecc811a8
+msgid "`Marek Marczykowski-Górecki <https://www.qubes-os.org/team/#marek-marczykowski-górecki>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:101
+#: 99ba77b458e04112a6db329d2ea4728e
+msgid "`Simon Gaiser (aka HW42) <https://www.qubes-os.org/team/#simon-gaiser-aka-hw42>`__"
+msgstr ""
+
+#: ../../../project-security/security.rst:103
+#: 73e580c4c90844c29d9632fb596defe3
+msgid "`Joanna Rutkowska <https://www.qubes-os.org/team/#joanna-rutkowska>`__ (`emeritus, canaries only <https://www.qubes-os.org/news/2018/11/05/qubes-security-team-update/>`__)"
+msgstr ""

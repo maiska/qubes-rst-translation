@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, test
+# This file is distributed under the same license as the qubes-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: qubes-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-16 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:3
+#: f3a56eb3142745d1aa380d2af9b14f3d
+msgid "VPN troubleshooting"
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:7
+#: 1836b259d6f445d5b67827b5059f7ec2
+msgid "Tips"
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:10
+#: f7e7a76edb784b82936ac178204347f2
+msgid "If using qubes-vpn, check the VPN service’s log in the VPN VM by running:"
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:19
+#: af0d31ae000d458892ff0b99d1f6265b
+msgid "Always test your basic VPN connection before adding scripts."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:21
+#: f7f6a4a1e45d4ebd8f48189bf2537ac6
+msgid "Test DNS: Ping a familiar domain name from an appVM. It should print the IP address for the domain."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:24
+#: 50f716c69cc048b680cbf54d2feea4ff
+msgid "Use ``iptables -L -v`` and ``iptables -L -v -t nat`` to check firewall rules. The latter shows the critical PR-QBS chain that enables DNS forwarding."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:31
+#: e7d09d163ae9411c8d7fcd9e6b6c5fa3
+msgid "VPN does not reconnect after suspend"
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:34
+#: e1161375c692441f9e6fcb4788075736
+msgid "This applies when using OpenVPN."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:36
+#: 9fa437ebb1504151ae441aa4e6dce044
+msgid "After suspend/resume, OpenVPN may not automatically reconnect. In order to get it to work, you must kill the OpenVPN process and restart it."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:40
+#: 901647b958e24e4ebd1c78a8efc1286c
+msgid "VPN stuck at \"Ready to start link\""
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:43
+#: 60bc9eb9e2d14c79b9b5e30c5e931377
+msgid "After setting up OpenVPN and restarting the VM, you may be repeatedly getting the popup “Ready to start link”, but the VPN isn’t connected."
+msgstr ""
+
+#: ../../../user/troubleshooting/vpn-troubleshooting.rst:46
+#: 29826c726edf4a6da159820ab5351be6
+msgid "To figure out the root of the problem, check the VPN logs in ``/var/logs/syslog``. The log may reveal issues like missing OpenVPN libraries, which you can then install."
+msgstr ""
